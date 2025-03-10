@@ -219,6 +219,17 @@ h1 {
   align-items: center;
   height: 50rem;
 }
+#choix {
+  display: flex;
+  margin: 20px;
+  border-radius: 20px;
+  background-color: rgba(3, 9, 56, 0.3);
+}
+
+#choix div {
+  padding: 20px;
+  margin: 10px;
+}
 
 #webProject {
   width: 100%;
