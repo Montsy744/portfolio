@@ -226,9 +226,25 @@ h1 {
   background-color: rgba(3, 9, 56, 0.3);
 }
 
-#choix div {
+#choix .btn-choix {
   padding: 20px;
   margin: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#btn-choix1 {
+  background-color: rgba(107,104,128, 0.6);
+}
+.modal {
+  display: none; /* Masquer par défaut */
+  opacity: 0; /* Opacité initiale */
+  transition: opacity 1s ease; /* Transition d'opacité */
+}
+
+.modal.show {
+  display: block; /* Afficher le modal */
+  opacity: 1; /* Opacité finale */
 }
 
 #webProject {
@@ -270,6 +286,7 @@ h1 {
 }
 .card {
   max-width: 300px;
+  height: 350px;
   border-radius: 0.5rem;
   background-color: #fff;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -326,6 +343,80 @@ h1 {
 
 .action:hover span {
   transform: translateX(4px);
+}
+
+#certification {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#certificationContaineur{
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(3, 9, 56, 0.3);
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 10rem;
+}
+
+.certificationGrid1 {
+  grid-column: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px red;
+  min-width: 40rem;
+  min-height: 25rem;
+}
+
+.certificationGrid2 {
+  grid-column: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px red;
+  min-width: 25rem;
+  min-height: 25rem;
+}
+
+#skils{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#skilsContaineur{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: rgba(3, 9, 56, 0.3);
+  margin: 10px;
+}
+
+.skilsItem {
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  
 }
 
 .reveal {
