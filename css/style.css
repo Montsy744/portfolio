@@ -69,6 +69,17 @@ body {
 .container #ohmycode:hover {
   color: rgb(121, 121, 244);
 }
+.container #ohmycodetel {
+  display: none;
+  z-index: 1;
+  margin-top: 10%;
+  padding: 10px;
+  color: aliceblue;
+}
+
+.container #ohmycodetel:hover {
+  color: rgb(121, 121, 244);
+}
 .btnHeader {
   z-index: 1;
   display: flex;
@@ -147,8 +158,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50vh;
-  margin-bottom: 50vh;
+  margin-top: 50rem;
+  margin-bottom: 50rem;
 }
 
 p {
@@ -217,6 +228,8 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 50rem;
+  margin-bottom: 50rem;
   height: 50rem;
 }
 #choix {
@@ -371,9 +384,7 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px red;
-  min-width: 40rem;
-  min-height: 25rem;
+
 }
 
 .certificationGrid2 {
@@ -383,7 +394,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: solid 1px red;
   min-width: 25rem;
   min-height: 25rem;
 }

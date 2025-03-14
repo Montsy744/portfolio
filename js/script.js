@@ -1,42 +1,4 @@
-/*document.addEventListener("DOMContentLoaded", () => {
-  const portfolioText = document
-    .getElementById("portfolio")
-    .innerText.split("");
 
-  // Fonction pour animer les lettres
-  const animateLetters = (text, elementId) => {
-    return new Promise((resolve) => {
-      const container = document.getElementById(elementId);
-      container.innerHTML = ""; // Vide le contenu existant
-
-      text.forEach((letter, index) => {
-        const span = document.createElement("span");
-        span.classList.add("letter");
-        span.innerText = letter;
-        container.appendChild(span);
-
-        // Délai pour chaque lettre
-        setTimeout(() => {
-          span.style.opacity = 1; // Rendre la lettre visible
-          span.style.transform = "translateY(0)"; // Ramener la lettre à sa position d'origine
-
-          // Résoudre la promesse lorsque la dernière lettre est affichée
-          if (index === text.length - 1) {
-            resolve();
-          }
-        }, index * 100); // Délai de 100ms entre chaque lettre
-      });
-    });
-  };
-
-  // Animer les lettres de la deuxième ligne
-  setTimeout(() => {
-    const portfolioContainer = document.getElementById("portfolio");
-    portfolioContainer.style.display = "block"; // Afficher la deuxième ligne
-    animateLetters(portfolioText, "portfolio"); // Animer la deuxième ligne
-  }, 10); // Délai avant de commencer l'animation de la deuxième ligne
-});
-*/
 const starsContainer = document.querySelector(".stars");
 const containerHeight = document.querySelector(".container").offsetHeight;
 const maxStars = 10; // Nombre maximum d'étoiles
