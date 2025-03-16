@@ -16,7 +16,13 @@
         background-attachment:local;
         color: white;
       }
-    
+      .div1 .containerDownload {
+        margin: 50px;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     .container .texte h1 {
         font-size: 2rem;
     }
@@ -105,7 +111,13 @@
         background-attachment:local;
         color: white;
       }
-    
+      .div1 .containerDownload {
+        margin: 50px;
+        font-size: large;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
     .container .texte h1 {
         font-size: 2rem;
     }
