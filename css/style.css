@@ -38,7 +38,6 @@ body {
   align-items: center;
   color: white;
 }
-
 .container {
   position: relative; /* Ajouté pour que les étoiles soient positionnées par rapport à la container */
   text-align: center;
