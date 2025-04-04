@@ -49,14 +49,14 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 1000px;
-        margin: 50px;
+        width: 100%;
     }
     .textSousTitre {
         text-align: center;
     }
     .aboutMeParent .div3 div {
         margin: 20px;
+        width: 100%;
     }
     .aboutMeParent img {
         margin: 20px;
@@ -80,6 +80,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 90%;
     }
 
     #certificationContaineur div {
@@ -89,6 +90,10 @@
         align-items: center;
         width: 90%;
         text-align: center;
+    }
+
+    .certificationGrid1 img{
+        width: 100%;
     }
 
     #skilsContaineur{
