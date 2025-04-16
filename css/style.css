@@ -286,15 +286,16 @@ h1 {
   align-items: center;
 }
 .webProject {
-  padding: 20px;
+  padding: 40px 70px;
   border-radius: 20px;
   background-color: rgba(3, 9, 56, 0.3);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 8px;
+  gap: 30px;
   margin: 10px;
 }
+
 
 .webProject1 {
   grid-column-start: 1;
@@ -313,6 +314,11 @@ h1 {
 
 .webProject4 {
   grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.webProject5 {
+  grid-column-start: 2;
   grid-row-start: 2;
 }
 .card {
@@ -424,13 +430,27 @@ h1 {
 
 #skilsContaineur{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
   border-radius: 20px;
   background-color: rgba(3, 9, 56, 0.3);
   margin: 10px;
+}
+
+#skilsContaineur > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.skilsItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .skilsItem {
