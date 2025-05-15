@@ -1,205 +1,80 @@
-@media screen and (max-width: 600px) {
-    /* Styles pour les mobiles et petites tablettes */
-    body {
-        background-color: hsla(229, 0%, 0%, 1);
-        background-image: radial-gradient(
-            at 41% 34%,
-            hsla(231, 100%, 31%, 0.27) 0px,
-            transparent 50%
-          ),
-          radial-gradient(at 80% 0%, hsla(274, 100%, 56%, 1) 0px, transparent 50%),
-          radial-gradient(at 0% 50%, hsla(283, 100%, 36%, 1) 0px, transparent 50%),
-          radial-gradient(at 80% 50%, hsla(238, 55%, 56%, 1) 0px, transparent 50%),
-          radial-gradient(at 0% 100%, hsla(230, 66%, 49%, 1) 0px, transparent 50%),
-          radial-gradient(at 80% 100%, hsla(222, 77%, 26%, 1) 0px, transparent 50%),
-          radial-gradient(at 0% 0%, hsla(231, 59%, 33%, 1) 0px, transparent 50%);
-        background-attachment:local;
-        color: white;
-      }
-      .div1 .containerDownload {
-        margin: 50px;
-        font-size: large;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    .case {
-        width: 100%;
-    }
-    .div3 {
-        width: 100%
-    }
-    .container .texte h1 {
-        font-size: 2rem;
-    }
-    .container #ohmycodetel {
-        display: block;
-    }
-    .container #ohmycode {
-        display: none;
-    }
-    .aboutMeParent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .aboutMeParent .div3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-    }
-    .textSousTitre {
-        text-align: center;
-    }
-    .aboutMeParent .div3 div {
-        margin: 20px;
-        width: 100%;
-    }
-    .aboutMeParent img {
-        margin: 20px;
-    }
-    #choix {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .webProject {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-    }
-    #certificationContaineur {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-    }
-
-    #certificationContaineur div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        text-align: center;
-    }
-
-    .certificationGrid1 img{
-        width: 100%;
-    }
-
-    #skilsContaineur{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
+@media screen and (max-width: 999px) {
+  #btn-choix2 {
+    display: none;
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    body {
-        background-color: hsla(229, 0%, 0%, 1);
-        background-image: radial-gradient(
-            at 41% 34%,
-            hsla(231, 100%, 31%, 0.27) 0px,
-            transparent 50%
-          ),
-          radial-gradient(at 80% 0%, hsla(274, 100%, 56%, 1) 0px, transparent 50%),
-          radial-gradient(at 0% 50%, hsla(283, 100%, 36%, 1) 0px, transparent 50%),
-          radial-gradient(at 80% 50%, hsla(238, 55%, 56%, 1) 0px, transparent 50%),
-          radial-gradient(at 0% 100%, hsla(230, 66%, 49%, 1) 0px, transparent 50%),
-          radial-gradient(at 80% 100%, hsla(222, 77%, 26%, 1) 0px, transparent 50%),
-          radial-gradient(at 0% 0%, hsla(231, 59%, 33%, 1) 0px, transparent 50%);
-        background-attachment:local;
-        color: white;
-      }
-      .div1 .containerDownload {
-        margin: 50px;
-        font-size: large;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    .container .texte h1 {
-        font-size: 2rem;
-    }
-    .container #ohmycodetel {
-        display: block;
-    }
-    .container #ohmycode {
-        display: none;
-    }
-    .aboutMeParent {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .aboutMeParent .div3 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin: 50px;
-    }
-    .textSousTitre {
-        text-align: center;
-    }
-    .aboutMeParent .div3 div {
-        margin: 20px;
-    }
-    .aboutMeParent img {
-        margin: 20px;
-    }
-    #choix {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media screen and (max-width: 899px) {
+  .div3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
 
-    .webProject {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 20px;
-    }
-    #certificationContaineur {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  .div3 div {
+    margin: 10px;
+  }
+  .div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .aboutMeParent {
+    height: 1300px;
+  }
 
-    #certificationContaineur div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        text-align: center;
-    }
-
-    #skilsContaineur{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-    }
+  .webProject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
 }
-@media screen and (min-width: 769px) and (max-width: 1024px) {
 
+@media screen and (max-width: 699px) {
+  .textSousTitre {
+    text-align: center;
+  }
 
-} 
+  #skilsContaineur div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .aboutMeParent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .div3 {
+    display: none;
+  }
+}
+@media screen and (max-width: 499px) {
+  .textSousTitre {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .fleur {
+    display: none;
+  }
+
+  #ohmycode {
+    display: none;
+  }
+  #ohmycodetel {
+    display: block;
+    z-index: 1;
+    margin-top: 10%;
+    padding: 10px;
+    color: aliceblue;
+  }
+}

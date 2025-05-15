@@ -70,10 +70,6 @@ body {
 }
 .container #ohmycodetel {
   display: none;
-  z-index: 1;
-  margin-top: 10%;
-  padding: 10px;
-  color: aliceblue;
 }
 
 .container #ohmycodetel:hover {
@@ -171,8 +167,8 @@ h1 {
 
 .aboutMeParent {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(5, auto);
   gap: 8px;
   width: 90%;
   margin-top: 5%;
@@ -186,7 +182,6 @@ h1 {
 .div1 .containerDownload {
   margin: 50px;
   font-size: large;
-  
 }
 
 .div1 .containerDownload .download-btn {
@@ -265,7 +260,7 @@ h1 {
 }
 
 #btn-choix1 {
-  background-color: rgba(107,104,128, 0.6);
+  background-color: rgba(107, 104, 128, 0.6);
 }
 .modal {
   display: none; /* Masquer par défaut */
@@ -295,7 +290,6 @@ h1 {
   gap: 30px;
   margin: 10px;
 }
-
 
 .webProject1 {
   grid-column-start: 1;
@@ -390,7 +384,7 @@ h1 {
   align-items: center;
 }
 
-#certificationContaineur{
+#certificationContaineur {
   padding: 20px;
   border-radius: 20px;
   background-color: rgba(3, 9, 56, 0.3);
@@ -407,7 +401,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .certificationGrid2 {
@@ -420,7 +413,7 @@ h1 {
   min-height: 25rem;
 }
 
-#skils{
+#skils {
   width: 100%;
   margin-top: 20px;
   display: flex;
@@ -428,7 +421,7 @@ h1 {
   align-items: center;
 }
 
-#skilsContaineur{
+#skilsContaineur {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -462,7 +455,6 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 20px;
-  
 }
 
 .reveal {
