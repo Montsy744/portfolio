@@ -10,7 +10,12 @@
   font-family: "sour-gummy";
   src: url("./../public/police/SourGummy-Regular.ttf");
 }
-
+:root {
+  --html: #e86026;
+  --css: #0f6cac;
+  --Js: #f4dd1b;
+  --git: #ed4b26;
+}
 html {
   font-family: "sour-gummy";
 }
@@ -29,6 +34,19 @@ body {
     radial-gradient(at 0% 0%, hsla(231, 59%, 33%, 1) 0px, transparent 50%);
   background-attachment: fixed;
   color: white;
+}
+
+.colorHtml {
+  color: var(--html);
+}
+.colorCss {
+  color: var(--css);
+}
+.colorJs {
+  color: var(--Js);
+}
+.colorGit {
+  color: var(--git);
 }
 
 #accueil {
