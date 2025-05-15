@@ -394,6 +394,24 @@ h1 {
   transform: translateX(4px);
 }
 
+#universityProject {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.universityProject {
+  padding: 40px 70px;
+  border-radius: 20px;
+  background-color: rgba(3, 9, 56, 0.3);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+  margin: 10px;
+}
+
 #certification {
   width: 100%;
   margin-top: 20px;
