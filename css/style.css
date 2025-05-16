@@ -171,8 +171,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50rem;
-  margin-bottom: 50rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
 }
 
 p {
@@ -222,6 +222,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 .div2 img {
   width: 80%;
@@ -259,9 +260,6 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 50rem;
-  margin-bottom: 50rem;
-  height: 50rem;
 }
 #choix {
   display: flex;
