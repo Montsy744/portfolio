@@ -302,7 +302,7 @@ h1 {
   background-color: rgba(3, 9, 56, 0.3);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 30px;
   margin: 10px;
 }
@@ -330,6 +330,14 @@ h1 {
 .webProject5 {
   grid-column-start: 2;
   grid-row-start: 2;
+}
+.webProject6 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.webProject7 {
+  grid-column-start: 1;
+  grid-row-start: 3;
 }
 .card {
   max-width: 300px;
