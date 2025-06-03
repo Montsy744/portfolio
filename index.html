@@ -82,17 +82,17 @@
       </div>
     </div>
     <div id="aboutMe">
-      <h1 class="degradeCouleur">ABOUT ME</h1>
-      <p class=" textSousTitre">
+      <h1 class="degradeCouleur" id="about_title">ABOUT ME</h1>
+      <p class=" textSousTitre" id="about_intro">
         <i class="fa-solid fa-fan fleur" style="color: #8a64de"></i>
         transforming ideas into digital experience
         <i class="fa-solid fa-fan fleur" style="color: #8a64de"></i>
       </p>
       <div class="aboutMeParent">
         <div class="div1 reveal" data-delay="0.8">
-          <h1 class="degradeCouleur">Hello, I'm</h1>
+          <h1 class="degradeCouleur" id="about_hello">Hello, I'm</h1>
           <h1>Hugo Straseele</h1>
-          <p style="text-align: justify">
+          <p style="text-align: justify" id="about_text">
             I'm a French student in Web Development, and I am a front-end developer. 
             I love turning ideas and projects into real websites. Passionate about web technologies, 
             I can create attractive and functional user interfaces. My goal is to provide a smooth and 
@@ -100,7 +100,7 @@
              new challenges and opportunities to learn and grow in this ever-changing field.
           </p>
           <div class="containerDownload">
-            <a href="./public/cv/CV_Hugo_Straseele.PDF" download="CV_Hugo_Straseele.pdf" class="download-btn">download my CV</a>
+            <a href="./public/cv/CV_Hugo_Straseele.PDF" download="CV_Hugo_Straseele.pdf" class="download-btn" id="cv_button">download my CV</a>
         </div>
         </div>
         <div class="div2">
@@ -115,24 +115,24 @@
           <div class="case reveal" data-delay="0.3">
             <div>
               <i class="fa-solid fa-code fa-3x"></i>
-              <h4>TOTAL PROJECT</h4>
-              <p style="font-size: large">All my web project</p>
+              <h4 id="project_total_title">TOTAL PROJECT</h4>
+              <p style="font-size: large" id="project_total">All my web project</p>
             </div>
             <h1>4</h1>
           </div>
           <div class="case reveal" data-delay="0.5">
             <div>
               <i class="fa-solid fa-graduation-cap fa-3x"></i>
-              <h4>CERTIFICATES</h4>
-              <p style="font-size: large">All my professional skills</p>
+              <h4 id="certificates_title">CERTIFICATES</h4>
+              <p style="font-size: large" id="certificates">All my professional skills</p>
             </div>
             <h1>1</h1>
           </div>
           <div class="case reveal" data-delay="0.7">
             <div>
               <i class="fa-solid fa-calendar-days fa-3x"></i>
-              <h4>EXPERIENCE</h4>
-              <p style="font-size: large">my number of years of experience</p>
+              <h4 id="experience_title">EXPERIENCE</h4>
+              <p style="font-size: large" id="experience">my number of years of experience</p>
             </div>
             <h1>1</h1>
           </div>
@@ -140,22 +140,22 @@
       </div>
     </div>
     <div id="portfolioExplore">
-      <h1 class="degradeCouleur" >Portfolio Showcase</h1>
-      <p class="textSousTitre">
+      <h1 class="degradeCouleur" id="portfolio_showcase" >Portfolio Showcase</h1>
+      <p class="textSousTitre" id="portfolio_subtitle">
         Explore my web project, certifications and technical expertise.
       </p>
       <div id="choix">
          <div class="reveal btn-choix" id="btn-choix4" data-delay="0.6">
-          <p>University project</p>
+          <p id="btn_university">University project</p>
         </div>
         <div class="reveal btn-choix" id="btn-choix1" data-delay="0.4">
-          <p>personal project</p>
+          <p id="btn_personal">personal project</p>
         </div>
         <div class="reveal btn-choix" id="btn-choix2" data-delay="0.6">
-          <p>certificates</p>
+          <p id="btn_certificates">certificates</p>
         </div>
         <div class="reveal btn-choix" id="btn-choix3" data-delay="0.8">
-          <p>skills</p>
+          <p id="btn_skills">skills</p>
         </div>
       </div>
       <div id="modal1" class="modal">
@@ -418,7 +418,7 @@
     </div>
     <script src="./js/script.js"></script>
     <script src="./js/scroll-reveal.js"></script>
-    <scrip src="./js/lang.js"></script>
+    <script src="./js/lang.js"></script>
     <script src="./js/PortfolioShowcase.js"></script>
   </body>
 </html>

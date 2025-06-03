@@ -11,7 +11,7 @@ function applyTranslations(data) {
 }
 
 function loadLanguage(lang) {
-  fetch(`./public/lang/${lang}.json`)
+  fetch(`./Json/${lang}.json`)
     .then((res) => res.json())
     .then((data) => applyTranslations(data))
     .catch((err) => console.error("Erreur de chargement :", err));

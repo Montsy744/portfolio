@@ -1,0 +1,21 @@
+{
+  "welcome": "WELCOME TO MY",
+  "portfolio": "WEBSITE PORTFOLIO",
+  "about_title": "ABOUT ME",
+  "about_intro": "transforming ideas into digital experience",
+  "about_hello": "Hello, I'm",
+  "about_text": " I'm a French student in Web Development, and I am a front-end developer. I love turning ideas and projects into real websites. Passionate about web technologies, I can create attractive and functional user interfaces. My goal is to provide a smooth and enjoyable user experience while adhering to development best practices. I am always looking for new challenges and opportunities to learn and grow in this ever-changing field.",
+  "cv_button": "download my CV",
+  "project_total_title": "TOTAL PROJECT",
+  "project_total": "All my web project",
+  "certificates_title" : "CERTIFICATES",
+  "certificates": "All my professional skills",
+  "experience_title": "EXPERIENCE",
+  "experience": "my number of years of experience",
+  "portfolio_showcase": "Portfolio Showcase",
+  "portfolio_subtitle": "Explore my web project, certifications and technical expertise.",
+  "btn_university": "University project",
+  "btn_personal": "personal project",
+  "btn_certificates": "certificates",
+  "btn_skills": "skills"
+}
