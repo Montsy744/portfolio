@@ -36,6 +36,34 @@ body {
   color: white;
 }
 
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(3, 9, 56, 0.3);
+
+}
+
+header #language-selector {
+  margin : 0 20px;
+  padding: 10px;
+  background-color: rgba(3, 9, 56, 0.4);
+  color: white;
+  border: none;
+  font-size: 1.4rem;
+  font-family: "titre";
+  cursor: pointer;
+}
+
+header #language-selector:hover {
+  background-color: rgba(3, 9, 56, 0.6);
+}
+
+
 .colorHtml {
   color: var(--html);
 }
