@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color-element: rgba(255, 255, 255, 0.3);
+    --liens: #000000;
+    --liens-hover: #4D5A5D;
+    --paragraph-color: #000000;
+    --i-color: #000000;
+    --i-border-color: rgba(255, 255, 255, 0.2);
+    --i-hover: #4D5A5D;
+}
+
+body.night {
+    --background-color-element: rgba(34, 48, 79, 0.3);
+    --liens: #FFFFFF;
+    --liens-hover: #4A5770;
+    --paragraph-color: #FFFFFF;
+    --i-color: #FFFFFF;
+    --i-border-color: rgba(0, 0, 0, 0.2);
+    --i-hover: #4A5770;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: url(./../public/img/backgrounds/bwca-day.png) center center / cover no-repeat;
+    transition: opacity 0.8s cubic-bezier(1, 0.5, 0.6, 1);
+    opacity: 1;
+    pointer-events: none;
+}
+body.night::before {
+    background: url(./../public/img/backgrounds/bwca-night.png) center center / cover no-repeat;
+    opacity: 1;
+}
+
+header {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.5s;
+}
+
+body.night #containerHeader {
+    border: solid 1px rgba(0, 53, 122, 0.2);
+}
+
+#containerHeader a {
+    padding: 10px;
+    font-family: 'Roboto_bold';
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--liens);
+    transition: color 0.3s;
+}
+
+#containerHeader a:hover {
+    color: var(--liens-hover);
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: transparent;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 20px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    transition: background-color 0.5s;
+}
+
+body.night #containerFooter {
+    border: solid 1px rgba(0, 53, 122, 0.2);
+}
+
+#containerFooter p {
+    font-size: 1.3rem;
+    color: var(--paragraph-color);
+    margin: 0;
+}
+
+#containerFooter a i {
+    color: var(--i-color);
+    padding: 5px;
+    margin: 0px 5px;
+    border: solid 2px var(--i-border-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#containerFooter a i:hover {
+    color: var(--i-hover);
+}
+
