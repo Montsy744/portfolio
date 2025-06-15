@@ -2,15 +2,22 @@
     --background-color-element: rgba(255, 255, 255, 0.3);
     --color-background-image-1: #A5D5DF;
     --color-background-image-2: #597C3A;
-    --background-color-card: antiquewhite;
+    --background-color-card: #f7d1d1;
     --border-color-element: rgba(255, 255, 255, 0.2);
     --colorText: #000000;
+    --color-btn-card: antiquewhite;
+    --color-border-btn-card: antiquewhite;
 }
 
 body.night {
     --background-color-element: rgba(34, 48, 79, 0.3);
+    --color-background-image-1: #1E3263;
+    --color-background-image-2: #2F3F78;
+    --background-color-card: #011122;
     --border-color-element: rgba(0, 53, 122, 0.2);
     --colorText: #FFFFFF;
+    --color-btn-card: rgba(34, 48, 79, 0.3);
+    --color-border-btn-card: rgba(0, 53, 122, 0.2);
 }
 
 .card {
@@ -33,7 +40,7 @@ body.night {
 }
 
 .card:hover {
-    transform: rotate(-5deg) scale(1.1);
+    transform: rotate(-2deg) scale(1.1);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -59,18 +66,49 @@ body.night {
 .card__title {
     margin: 0;
     font-size: 24px;
-    color: #333;
+    color: var(--colorText);
     font-weight: 700;
 }
 
 .card__description {
     margin: 10px 0 0;
     font-size: 14px;
-    color: #777;
+    color: var(--colorText);
     line-height: 1.4;
 }
 
 .card:hover img {
     scale: 0;
     transform: rotate(-45deg);
+}
+
+.btnContainer {
+    display: flex ;
+    flex-direction: row;
+}
+
+.btnCard {
+    color: var(--colorText);
+    border: solid 3px var(--color-border-btn-card);
+    border-radius: 5px;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.site {
+    background-color: var(--color-btn-card);
+    
+}
+.btnCard:hover {
+    border-radius: 10px;
+    transition-duration: 1s ;
+}
+.btnCard:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) inset;
 }
