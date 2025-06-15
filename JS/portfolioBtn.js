@@ -1,25 +1,22 @@
 const portfolio = document.getElementById("modal1");
-const certification = document.getElementById("modal2");
-const skills = document.getElementById("modal3");
-const university = document.getElementById("modal4");
+const university = document.getElementById("modal2");
+
+
 
 const btnPortfolio = document.getElementById("btn-choix1");
-const btnCertification = document.getElementById("btn-choix2");
-const btnSkills = document.getElementById("btn-choix3");
-const btnUniversity = document.getElementById("btn-choix4");
+const btnuniversity = document.getElementById("btn-choix2");
+
 
 function showModal(modalToShow, btnToHighlight) {
     // Masquer tous les modaux
     portfolio.classList.remove("show");
-    certification.classList.remove("show");
-    skills.classList.remove("show");
     university.classList.remove("show");
+
 
     // Réinitialiser l'opacité
     portfolio.style.opacity = "0";
-    certification.style.opacity = "0";
-    skills.style.opacity = "0";
     university.style.opacity = "0";
+
 
     // Afficher le modal sélectionné
     modalToShow.classList.add("show");
@@ -38,9 +35,8 @@ function showModal(modalToShow, btnToHighlight) {
 
   // Réinitialiser les styles de fond des boutons
   btnPortfolio.style.backgroundColor = "transparent"; // Couleur de fond transparente
-  btnCertification.style.backgroundColor = "transparent"; // Couleur de fond transparente
-  btnSkills.style.backgroundColor = "transparent"; // Couleur de fond transparente
-  btnUniversity.style.backgroundColor = "transparent"; // Couleur de fond transparente
+  btnuniversity.style.backgroundColor = "transparent"; // Couleur de fond transparente
+
 
   // Mettre en surbrillance le bouton sélectionné
   btnToHighlight.style.backgroundColor = "rgba(107, 104, 128, 0.6)"; // Couleur de fond du bouton actif
@@ -55,13 +51,7 @@ btnPortfolio.addEventListener("click", function () {
     showModal(portfolio, btnPortfolio);
 });
 
-btnCertification.addEventListener("click", function () {
-    showModal(certification, btnCertification);
+btnuniversity.addEventListener("click", function () {
+    showModal(university, btnuniversity);
 });
 
-btnSkills.addEventListener("click", function () {
-    showModal(skills, btnSkills);
-});
-btnUniversity.addEventListener("click", function () {
-    showModal(university, btnUniversity);
-});
