@@ -1,15 +1,36 @@
 :root {
+    --html: #e86026;
+    --css: #0f6cac;
+    --Js: #f4dd1b;
+    --git: #ed4b26;
+}
+
+:root {
     --background-color-element: rgba(255, 255, 255, 0.3);
     --border-color-element: rgba(255, 255, 255, 0.2);
     --colorText: #000000;
+    --color-background-btn-choix: #597C3A;
 }
 
 body.night {
     --background-color-element: rgba(34, 48, 79, 0.3);
     --border-color-element: rgba(0, 53, 122, 0.2);
     --colorText: #FFFFFF;
+    --color-background-btn-choix: #2F3F78;
 }
 
+.colorHtml {
+    color: var(--html);
+}
+.colorCss {
+    color: var(--css);
+}
+.colorJs {
+    color: var(--Js);
+}
+.colorGit {
+    color: var(--git);
+}
 
 #mainHeader {
     margin: 20px 0px;;
@@ -25,17 +46,18 @@ body.night {
 
 #containerPortfolio {
     font-size: 1.3rem;
-    padding: 20px;
-    background-color: var(--background-color-element);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid 1px var(--border-color-element);
     color: var(--colorText);
 
     
 }
 
-#modal1 {
+#modalContainer {
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    padding: 20px;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -69,4 +91,36 @@ body.night {
 #webCard7 {
     grid-column: 1;
     grid-row: 3 ;
+}
+
+#choix {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#choix .btn-choix {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+    border: solid 1px var(--border-color-element);
+    border-radius: 5px;
+    color: var(--colorText);
+    cursor: pointer;
+}
+
+#btn-choix1 {
+    background-color: var(--color-background-btn-choix);
+}
+
+.modal {
+    display: none; /* Masquer par défaut */
+    opacity: 0; /* Opacité initiale */
+    transition: opacity 1s ease; /* Transition d'opacité */
+}
+
+.modal.show {
+    display: block; /* Afficher le modal */
+    opacity: 1; /* Opacité finale */
 }

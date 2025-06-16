@@ -1,5 +1,18 @@
 const checkbox = document.getElementById('checkbox');
 
+
+function updateActiveBtnColor() {
+    // Réinitialise les deux boutons
+    btnPortfolio.style.backgroundColor = "transparent";
+    btnuniversity.style.backgroundColor = "transparent";
+    // Applique la couleur sur le bouton actif
+    if (checkbox.checked) {
+        btnActif.style.backgroundColor = "#597C3A";
+    } else {
+        btnActif.style.backgroundColor = "#2F3F78";
+    }
+}
+
 function updateBackground() {
     if (checkbox.checked) {
         document.body.classList.remove('night');
@@ -8,6 +21,7 @@ function updateBackground() {
         document.body.classList.add('night');
         localStorage.setItem('theme', 'night');
     }
+    updateActiveBtnColor();
 }
 
 // Applique le thème au chargement de la page

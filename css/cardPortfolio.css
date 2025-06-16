@@ -7,6 +7,7 @@
     --colorText: #000000;
     --color-btn-card: antiquewhite;
     --color-border-btn-card: antiquewhite;
+    --i-border-color: rgba(255, 255, 255, 0.2);
 }
 
 body.night {
@@ -18,6 +19,7 @@ body.night {
     --colorText: #FFFFFF;
     --color-btn-card: rgba(34, 48, 79, 0.3);
     --color-border-btn-card: rgba(0, 53, 122, 0.2);
+    --i-border-color: rgba(0, 0, 0, 0.2);
 }
 
 .card {
@@ -35,7 +37,6 @@ body.night {
 
 .card img {
     width: 300px;
-    height: 200px;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
@@ -111,4 +112,26 @@ body.night {
 .btnCard:active {
     transform: scale(0.96);
     box-shadow: 0 2px 8px rgba(0,0,0,0.15) inset;
+}
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.imgContainer div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer i {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 2px var(--i-border-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }

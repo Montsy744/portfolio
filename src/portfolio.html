@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Hugo Straseele" />
     <meta name="author" content="Montsy744 - Web developpeur" />
-    <link rel="icon" type="image/svg+xml" href="./public/img/logo/logoSansNom.PNG" />
+    <link rel="icon" type="image/svg+xml" href="./../public/img/logo/logoSansNom.PNG" />
     <title>Hugo Straseele Portfolio</title>
     <link rel="stylesheet" type="text/css" href="./../css/btnJourNuit.css" />
     <link rel="stylesheet" type="text/css" href="./../css/styleGeneral.css" />
@@ -47,95 +47,167 @@
         </div>
     </header>
     <main>
-        <div id="mainHeader">
+        <div id="mainHeader" class="animate__animated animate__fadeInDown">
             <h1>Mon Portfolio</h1>
             <p>Bienvenue sur mon portfolio ! Découvrez mes projets, compétences et réalisations en développement web.</p>
-        </div>
-        <div id="containerPortfolio">
-            <!-- Patterened card for portfolio items
-            
-            --> 
-            <div id="modal1">
-                <div class="card" id="webCard1">
-                    <img src="./../public/img/project/fondEdurhum.png" alt="Image de la carte" class="card__image">
-                    <div class="card__content">
-                        <p class="card__title">Site du bureau des étudiants</p>
-                        <p class="card__description">J'ai créé ce site pour le bureau des étudiants du BUT informatique de l'université de Lille.</p>
-                        <div class="btnContainer">
-                            <a href="https://montsy744.github.io/edurhum-site/" target="_blank" class="btnCard site">Voir le site</a>
-                            <a href="https://github.com/Montsy744/edurhum-site" target="_blank" class="btnCard code">Voir le code</a>
-                        </div>
-                    </div>
+            <div id="choix">
+                <div class="btn-choix" id="btn-choix1" data-delay="0.6">
+                    <p>projet personnel</p>
                 </div>
-                <div class="card" id="webCard2">
-                    <img src="./../public/img/project//fondOhMyCodes.png" alt="Image de la carte" class="card__image">
-                    <div class="card__content">
-                        <p class="card__title">OhMyCode</p>
-                        <p class="card__description">J'ai créé ce template pour vous montrer un exemple de ce que je suis capable de faire.</p>
-                        <div class="btnContainer">
-                            <a href="https://montsy744.github.io/OhMyCode/" target="_blank" class="btnCard site">Voir le site</a>
-                            <a href="https://github.com/Montsy744/OhMyCode" target="_blank" class="btnCard code">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="webCard3">
-                    <img src="./../public/img/project/fonLeanrCodeHub.png" alt="Image de la carte" class="card__image">
-                    <div class="card__content">
-                        <p class="card__title">LearnCodeHub</p>
-                        <p class="card__description">Un site pour apprendre les langages de programmation comme HTML, CSS et autres. (non responsive)</p>
-                        <div class="btnContainer">
-                            <a href="https://montsy744.github.io/LearnCodeHub/" target="_blank" class="btnCard site">Voir le site</a>
-                            <a href="https://github.com/Montsy744/LearnCodeHub" target="_blank" class="btnCard code">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="webCard4">
-                    <img src="./../public/img/project/fondToDoList.png" alt="Image de la carte" class="card__image">
-                    <div class="card__content">
-                        <p class="card__title">TodoList</p>
-                        <p class="card__description">Un petit site qui permet de faire une todo list très simple mais efficace</p>
-                        <div class="btnContainer">
-                            <a href="https://montsy744.github.io/ToDoList/" target="_blank" class="btnCard site">Voir le site</a>
-                            <a href="https://github.com/Montsy744/ToDoList" target="_blank" class="btnCard code">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="webCard5">
-                    <img src="./../public/img/project/fondJeuDeTire.png" alt="Image de la carte" class="card__image">
-                    <div class="card__content">
-                        <p class="card__title">jeu de tir</p>
-                        <p class="card__description">Un petit jeu de tir simple.</p>
-                        <div class="btnContainer">
-                            <a href="https://montsy744.github.io/jeuDeTire/" target="_blank" class="btnCard site">Voir le site</a>
-                            <a href="https://github.com/Montsy744/jeuDeTire" target="_blank" class="btnCard code">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="webCard6">
-                    <img src="./../public/img/project/fondHerbergeInDHope.png" alt="Image de la carte" class="card__image">
-                    <div class="card__content">
-                        <p class="card__title">Herberge In d'Hope</p>
-                        <p class="card__description">Un site pour un restaurant traditionnel de la région Hauts-de-France.</p>
-                        <div class="btnContainer">
-                            <a href="https://montsy744.github.io/Herberge_In_d_Hope/" target="_blank" class="btnCard site">Voir le site</a>
-                            <a href="" target="_blank" class="btnCard code">Voir le code</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="webCard7">
-                    <img src="./../public/img/project/fonPasswordGenerator.png" alt="Image de la carte" class="card__image">
-                    <div class="card__content">
-                        <p class="card__title">générateur de mot de passe</p>
-                        <p class="card__description">Un site simple pour générer un mot de passe de 12 caractères.</p>
-                        <div class="btnContainer">
-                            <a href="https://montsy744.github.io/genratorPassword/" target="_blank" class="btnCard site">Voir le site</a>
-                            <a href="" target="_blank" class="btnCard code">Voir le code</a>
-                        </div>
-                    </div>
+                <div class="btn-choix" id="btn-choix2" data-delay="0.4">
+                    <p>projet universitaire</p>
                 </div>
             </div>
-            
         </div>
+        <div id="containerPortfolio">
+            <div id="modal1"  class="animate__animated animate__fadeInUp modal">
+                <div id="modalContainer">
+                    <div class="card" id="webCard1">
+                        <div class="imgContainer">
+                            <img src="./../public/img/project/fondEdurhum.png" alt="Image de la carte" class="card__image">
+                            <div>
+                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
+                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
+                                <i class="fa-brands fa-js fa-1x colorJs"></i>
+                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <p class="card__title">Site du bureau des étudiants</p>
+                            <p class="card__description">J'ai créé ce site pour le bureau des étudiants du BUT informatique de l'université de Lille.</p>
+                            <div class="btnContainer">
+                                <a href="https://montsy744.github.io/edurhum-site/" target="_blank" class="btnCard site">Voir le site</a>
+                                <a href="https://github.com/Montsy744/edurhum-site" target="_blank" class="btnCard code">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="webCard2">
+                        <div class="imgContainer">
+                            <img src="./../public/img/project//fondOhMyCodes.png" alt="Image de la carte" class="card__image">
+                            <div>
+                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
+                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
+                                <i class="fa-brands fa-js fa-1x colorJs"></i>
+                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="card__content">
+                            <p class="card__title">OhMyCode</p>
+                            <p class="card__description">J'ai créé ce template pour vous montrer un exemple de ce que je suis capable de faire.</p>
+                            <div class="btnContainer">
+                                <a href="https://montsy744.github.io/OhMyCode/" target="_blank" class="btnCard site">Voir le site</a>
+                                <a href="https://github.com/Montsy744/OhMyCode" target="_blank" class="btnCard code">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="webCard3">
+                        <div class="imgContainer">
+                            <img src="./../public/img/project/fonLeanrCodeHub.png" alt="Image de la carte" class="card__image">
+                            <div>
+                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
+                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
+                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="card__content">
+                            <p class="card__title">LearnCodeHub</p>
+                            <p class="card__description">Un site pour apprendre les langages de programmation comme HTML, CSS et autres. (non responsive)</p>
+                            <div class="btnContainer">
+                                <a href="https://montsy744.github.io/LearnCodeHub/" target="_blank" class="btnCard site">Voir le site</a>
+                                <a href="https://github.com/Montsy744/LearnCodeHub" target="_blank" class="btnCard code">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="webCard4">
+                        <div class="imgContainer">
+                            <img src="./../public/img/project/fondToDoList.png" alt="Image de la carte" class="card__image">
+                            <div>
+                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
+                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
+                                <i class="fa-brands fa-js fa-1x colorJs"></i>
+                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="card__content">
+                            <p class="card__title">TodoList</p>
+                            <p class="card__description">Un petit site qui permet de faire une todo list très simple mais efficace</p>
+                            <div class="btnContainer">
+                                <a href="https://montsy744.github.io/ToDoList/" target="_blank" class="btnCard site">Voir le site</a>
+                                <a href="https://github.com/Montsy744/ToDoList" target="_blank" class="btnCard code">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="webCard5">
+                        <div class="imgContainer">
+                            <img src="./../public/img/project/fondJeuDeTire.png" alt="Image de la carte" class="card__image">
+                            <div>
+                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
+                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
+                                <i class="fa-brands fa-js fa-1x colorJs"></i>
+                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="card__content">
+                            <p class="card__title">jeu de tir</p>
+                            <p class="card__description">Un petit jeu de tir simple.</p>
+                            <div class="btnContainer">
+                                <a href="https://montsy744.github.io/jeuDeTire/" target="_blank" class="btnCard site">Voir le site</a>
+                                <a href="https://github.com/Montsy744/jeuDeTire" target="_blank" class="btnCard code">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="webCard6">
+                        <div class="imgContainer">
+                            <img src="./../public/img/project/fondHerbergeInDHope.png" alt="Image de la carte" class="card__image">
+                            <div>
+                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
+                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
+                                <i class="fa-brands fa-js fa-1x colorJs"></i>
+                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="card__content">
+                            <p class="card__title">Herberge In d'Hope</p>
+                            <p class="card__description">Un site pour un restaurant traditionnel de la région Hauts-de-France.</p>
+                            <div class="btnContainer">
+                                <a href="https://montsy744.github.io/Herberge_In_d_Hope/" target="_blank" class="btnCard site">Voir le site</a>
+                                <a href="" target="_blank" class="btnCard code">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="webCard7">
+                        <div class="imgContainer">
+                            <img src="./../public/img/project/fonPasswordGenerator.png" alt="Image de la carte" class="card__image">
+                            <div>
+                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
+                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
+                                <i class="fa-brands fa-js fa-1x colorJs"></i>
+                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                            </div>
+                        </div>
+                        
+                        <div class="card__content">
+                            <p class="card__title">générateur de mot de passe</p>
+                            <p class="card__description">Un site simple pour générer un mot de passe de 12 caractères.</p>
+                            <div class="btnContainer">
+                                <a href="https://montsy744.github.io/genratorPassword/" target="_blank" class="btnCard site">Voir le site</a>
+                                <a href="" target="_blank" class="btnCard code">Voir le code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal2" class="animate__animated animate__fadeInUp">
+                    
+                </div>
+            
+        
+            </div>
+        </div>  
     </main>
     <footer>
         <div id="containerFooter">
@@ -150,5 +222,6 @@
     </footer>
     
     <script src="./../JS/btnNuitJour.js"></script>
+    <script src="./../JS/portfolioBtn.js"></script>
 </body>
 </html>
