@@ -22,3 +22,50 @@ body.night {
     border: solid 1px var(--border-color-element);
     color: var(--colorText);
 }
+
+#containerAPropos{
+    width: 70%;
+    margin: 20px;
+    
+}
+
+#containerAPropos1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+}
+
+#containerAPropos1Texte {
+    padding: 20px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+    font-size: 1.3rem;
+}
+
+#containerAPropos1Texte p {
+    grid-column: 1;
+    height: auto;
+    padding: 20px;
+    text-align: justify;
+}
+
+#conatianerAPropos1Img {
+    grid-column: 2;
+    padding: 30px 0px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#conatianerAPropos1Img img {
+    width: 80%;
+    border-radius: 10%;
+}
