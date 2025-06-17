@@ -24,6 +24,11 @@ body.night {
     --i-hover: #4A5770;
 }
 
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./../public/police/Roboto_Condensed-Bold.ttf');
+}
+
 body {
     min-height: 100vh;
     display: flex;
@@ -73,7 +78,7 @@ body.night #containerHeader {
 
 #containerHeader a {
     padding: 10px;
-    font-family: 'Roboto_bold';
+    font-family: 'Roboto-Bold';
     font-size: 1.3rem;
     text-decoration: none;
     color: var(--liens);
