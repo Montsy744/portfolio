@@ -65,12 +65,17 @@ body.night {
     color: var(--colorText);
 }
 
-#liens a {
+.home {
+    text-decoration: none;
+    color: var(--colorText);
+}
+
+.liens a {
     color: var(--colorText);
     text-decoration: none;
 }
 
-#liens a:hover {
+.liens a:hover {
     color: var(--liens-hover);
 }
 
@@ -327,3 +332,65 @@ body.night {
     font-family: 'Roboto-light';
 }
 
+#containerAPropos5 {
+    margin: 20px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.div1 {
+    grid-column: span 2 / span 2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div2 img {
+    width: 80%;
+}
+
+#div2Texte {
+    text-align: justify;
+    padding: 20px;
+}
+
+.div3 {
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
+    grid-row-start: 2;
+}
+.div3 h3 {
+    text-align: center;
+}
+
+
+.div4 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+    grid-row-start: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#containerAPropos5 .div {
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+    font-size: 1.3rem;
+}

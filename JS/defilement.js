@@ -1,4 +1,4 @@
-document.querySelectorAll("#liens a").forEach((anchor) => {
+document.querySelectorAll(".liens a").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
         e.preventDefault(); // Empêche le comportement par défaut du lien
 
