@@ -1,0 +1,24 @@
+/*tel*/
+@media screen and (max-width: 412px) {
+    #containerHeader, #gaucheHeader {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #gaucheHeader {
+        margin: 0px 0px 20px 0px;
+    }
+
+    #containerFooter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction:column-reverse;
+    }
+
+    #gaucheFooter {
+        margin: 20px 0px 0px 0px;
+    }
+}

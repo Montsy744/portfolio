@@ -92,6 +92,10 @@ body.night {
     grid-column: 1;
     grid-row: 3 ;
 }
+#webCard8 {
+    grid-column: 2;
+    grid-row: 3 ;
+}
 
 #choix {
     display: flex;

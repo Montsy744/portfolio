@@ -330,6 +330,7 @@ body.night {
 
 .box p {
     font-family: 'Roboto-light';
+    text-align: justify;
 }
 
 #containerAPropos5 {
