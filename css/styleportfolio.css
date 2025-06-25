@@ -117,6 +117,24 @@ body.night {
     grid-row: 3 ;
 }
 
+#modalContainerUnniversitaire {
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+#uniCard1 {
+    grid-column: 1;
+    grid-row: 1 ;
+}
+
 #choix {
     display: flex;
     justify-content: center;

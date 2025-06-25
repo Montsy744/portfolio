@@ -37,6 +37,7 @@ body.night {
 
 .card img {
     width: 300px;
+    height: 140px;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
 }
 

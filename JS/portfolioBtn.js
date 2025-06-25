@@ -1,6 +1,9 @@
 const portfolio = document.getElementById("modal1");
 const university = document.getElementById("modal2");
 
+portfolio.classList.remove("show");
+university.classList.remove("show");
+
 const btnPortfolio = document.getElementById("btn-choix1");
 const btnuniversity = document.getElementById("btn-choix2");
 
@@ -52,12 +55,10 @@ portfolio.classList.add("show");
 portfolio.style.opacity = "1"; // Assurez-vous que l'opacité est à 1
 
 btnPortfolio.addEventListener("click", function () {
-    console.log("cliqué");
     showModal(portfolio, btnPortfolio);
 });
 
 btnuniversity.addEventListener("click", function () {
-    console.log("cliqué");
     showModal(university, btnuniversity);
 });
 
