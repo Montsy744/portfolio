@@ -21,4 +21,15 @@
     #gaucheFooter {
         margin: 20px 0px 0px 0px;
     }
+
+}
+
+@media screen and (max-width: 400px) {
+    #gaucheFooter {
+        text-align: center;
+    }
+    #btnPortfolio {
+        font-size: 1.2rem;
+        padding: 10px 20px;   
+    }
 }
