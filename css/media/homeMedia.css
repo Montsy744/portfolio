@@ -1,0 +1,12 @@
+@media screen and (max-width: 500px) {
+    #mainAccueil p {
+        font-size: 1.2rem;
+        max-width: 400px;
+    }
+    #containerPresentation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}

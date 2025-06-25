@@ -42,13 +42,24 @@ body::before {
     inset: 0;
     z-index: -1;
     background: url(./../public/img/backgrounds/bwca-day.png) center center / cover no-repeat;
-    transition: opacity 0.8s cubic-bezier(1, 0.5, 0.6, 1);
+    transition: opacity 3s cubic-bezier(1, 0.5, 0.6, 1);
     opacity: 1;
     pointer-events: none;
 }
+body.theme-fade::before {
+    opacity: 0;
+}
+
 body.night::before {
     background: url(./../public/img/backgrounds/bwca-night.png) center center / cover no-repeat;
     opacity: 1;
+    transition: opacity 3s cubic-bezier(1, 0.5, 0.6, 1);
+}
+
+body.dusk::before {
+    background: url(./../public/img/backgrounds/bwca-dusk.png) center center / cover no-repeat;
+    opacity: 1;
+    transition: opacity 3s cubic-bezier(1, 0.5, 0.6, 1);
 }
 
 header {

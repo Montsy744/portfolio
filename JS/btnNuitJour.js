@@ -14,14 +14,23 @@ function updateActiveBtnColor() {
 }
 
 function updateBackground() {
-    if (checkbox.checked) {
-        document.body.classList.remove('night');
-        localStorage.setItem('theme', 'day');
-    } else {
-        document.body.classList.add('night');
-        localStorage.setItem('theme', 'night');
-    }
-    updateActiveBtnColor();
+    // Met le thème dusk immédiatement
+    document.body.classList.add('dusk');
+    document.body.classList.remove('night');
+    document.body.classList.remove('day');
+
+    // Après 5 secondes, applique le vrai thème
+    setTimeout(() => {
+        document.body.classList.remove('dusk');
+        if (checkbox.checked) {
+            document.body.classList.remove('night');
+            localStorage.setItem('theme', 'day');
+        } else {
+            document.body.classList.add('night');
+            localStorage.setItem('theme', 'night');
+        }
+        updateActiveBtnColor();
+    }, 5000);
 }
 
 // Applique le thème au chargement de la page

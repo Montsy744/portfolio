@@ -3,6 +3,35 @@
     --css: #0f6cac;
     --Js: #f4dd1b;
     --git: #ed4b26;
+    --java: #5382a1;
+    --sql: #FE0809;
+    --md: #6CA3F7;
+    --react: #18CDDC;
+}
+.colorHtml {
+    color: var(--html);
+}
+.colorCss {
+    color: var(--css);
+}
+.colorJs {
+    color: var(--Js);
+}
+.colorJava {
+    color: var(--java);
+}
+.colorSql {
+    color: var(--sql)
+}
+.colorGit {
+    color: var(--git);
+}
+.colorMd{
+    color: var(--md);
+}
+
+.colorReact {
+    color: var(--react);
 }
 
 :root {
@@ -17,19 +46,6 @@ body.night {
     --border-color-element: rgba(0, 53, 122, 0.2);
     --colorText: #FFFFFF;
     --color-background-btn-choix: #2F3F78;
-}
-
-.colorHtml {
-    color: var(--html);
-}
-.colorCss {
-    color: var(--css);
-}
-.colorJs {
-    color: var(--Js);
-}
-.colorGit {
-    color: var(--git);
 }
 
 #mainHeader {
@@ -94,6 +110,10 @@ body.night {
 }
 #webCard8 {
     grid-column: 2;
+    grid-row: 3 ;
+}
+#webCard9 {
+    grid-column: 3;
     grid-row: 3 ;
 }
 
