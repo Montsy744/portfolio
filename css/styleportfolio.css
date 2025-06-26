@@ -52,6 +52,10 @@ body.night {
     --color-background-btn-choix: #2F3F78;
 }
 
+body.dusk {
+    --color-background-btn-choix: #A03B3E;
+}
+
 #mainHeader {
     margin: 20px 0px;;
     text-align: center;

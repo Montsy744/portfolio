@@ -51,6 +51,14 @@ body.night {
     --background-box-timeline:  rgb(34, 48, 79);
     --liens-hover: #4A5770;
 }
+body.dusk {
+    --background-color-element: rgba(193, 77, 80, 0.3);
+    --border-color-element: rgba(255, 255, 255, 0.2);
+    --colorText: #000000;
+    --color-ligne: rgb(32, 32, 32);
+    --background-box-timeline:  rgb(193, 77, 80);
+    --liens-hover: #4D5A5D;
+}
 
 #mainHeader {
     margin: 20px 0px;;

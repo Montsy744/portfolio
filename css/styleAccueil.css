@@ -10,6 +10,12 @@ body.night {
     --text-color: #FFFFFF;
 }
 
+body.dusk {
+    --background-color-element: rgba(193, 77, 80, 0.3);
+    --color-ombre-logo: rgba(0, 0, 0, 0.3);
+    --text-color: #000000;
+}
+
 #containerImage {
     filter: drop-shadow(0 4px 8px var(--color-ombre-logo));
 }

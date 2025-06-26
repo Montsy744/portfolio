@@ -24,6 +24,16 @@ body.night {
     --i-hover: #4A5770;
 }
 
+body.dusk {
+    --background-color-element: rgba(193, 77, 80, 0.3);
+    --liens: #000000;
+    --liens-hover: #4D5A5D;
+    --paragraph-color: #000000;
+    --i-color: #000000;
+    --i-border-color: rgba(255, 255, 255, 0.2);
+    --i-hover: #4D5A5D;
+}
+
 @font-face {
     font-family: 'Roboto-Bold';
     src: url('./../public/police/Roboto_Condensed-Bold.ttf');

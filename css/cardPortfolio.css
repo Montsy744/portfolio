@@ -22,6 +22,16 @@ body.night {
     --i-border-color: rgba(0, 0, 0, 0.2);
 }
 
+body.dusk {
+    --color-background-image-1: #051025;
+    --color-background-image-2: #A03B3E;
+    --background-color-card: #F7D1D1;
+    --colorText: #000000;
+    --color-btn-card: antiquewhite;
+    --color-border-btn-card: antiquewhite;
+    --i-border-color: rgba(255, 255, 255, 0.2);
+}
+
 .card {
     position: relative;
     width: 300px;

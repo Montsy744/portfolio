@@ -39,7 +39,7 @@ function showModal(modalToShow, btnToHighlight) {
     btnPortfolio.style.backgroundColor = "transparent"; // Couleur de fond transparente
     btnuniversity.style.backgroundColor = "transparent"; // Couleur de fond transparente
 
-
+    
     // Mettre en surbrillance le bouton sélectionné en fonction de jour/nuit
     if (checkbox.checked) {
         btnToHighlight.style.backgroundColor = "#597C3A"; // Couleur de fond du bouton actif

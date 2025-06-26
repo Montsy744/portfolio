@@ -30,7 +30,7 @@ function updateBackground() {
             localStorage.setItem('theme', 'night');
         }
         updateActiveBtnColor();
-    }, 5000);
+    }, 2000);
 }
 
 // Applique le thème au chargement de la page
