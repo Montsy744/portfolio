@@ -110,6 +110,12 @@ body.night #containerHeader {
     color: var(--liens-hover);
 }
 
+#droitHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 main {
     display: flex;
     flex-direction: column;

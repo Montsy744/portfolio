@@ -1,0 +1,217 @@
+@font-face {
+    font-family: 'cheryl';
+    src: url('./../public/police/CherryBombOne-Regular.ttf');
+}
+
+:root {
+    --html: #e86026;
+    --css: #0f6cac;
+    --Js: #f4dd1b;
+    --git: #ed4b26;
+    --java: #5382a1;
+    --sql: #FE0809;
+    --md: #6CA3F7;
+}
+.colorHtml {
+    color: var(--html);
+}
+.colorCss {
+    color: var(--css);
+}
+.colorJs {
+    color: var(--Js);
+}
+.colorJava {
+    color: var(--java);
+}
+.colorSql {
+    color: var(--sql)
+}
+.colorGit {
+    color: var(--git);
+}
+.colorMd{
+    color: var(--md);
+}
+
+:root {
+    --background-color-element: rgba(255, 255, 255, 0.3);
+    --border-color-element: rgba(214, 207, 207, 0.2);
+    --colorText: #000000;
+    --color-ligne: rgb(32, 32, 32);
+    --background-box-timeline:  rgb(255, 255, 255);
+    --liens-hover: #4D5A5D;
+    --opacite: 0.7;
+}
+
+body.night {
+    --background-color-element: rgba(34, 48, 79, 0.3);
+    --border-color-element: rgba(0, 53, 122, 0.2);
+    --colorText: #FFFFFF;
+    --color-ligne: rgb(241, 235, 235);
+    --background-box-timeline:  rgb(34, 48, 79);
+    --liens-hover: #4A5770;
+    --opacite: 0.2;
+}
+body.dusk {
+    --background-color-element: rgba(193, 77, 80, 0.3);
+    --border-color-element: rgba(255, 255, 255, 0.2);
+    --colorText: #000000;
+    --color-ligne: rgb(32, 32, 32);
+    --background-box-timeline:  rgb(193, 77, 80);
+    --liens-hover: #4D5A5D;
+    --opacite: 0.5;
+}
+
+#mainHeader {
+    margin: 20px 0px;;
+    text-align: center;
+    width: 70%;
+    font-size: 1.3rem;
+    padding: 20px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+}
+
+#containerMesComp{
+    width: 70%;
+    margin: 20px;
+    
+}
+
+#containerMesComp2 {
+    margin: 20px 0px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skilsContaineur {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 100px;
+    padding: 10px 0px 50px 0px;
+}
+#containerMesComp2 h2 {
+    padding: 40px;
+}
+
+#skilsContaineur .skilsItem {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+    padding: 5px;
+}
+
+#skilsContaineur .skilsItem .conatinerLogo {
+    position: relative;
+    width: 220px;   
+    height: 220px;  
+}
+
+.skilsItem p {
+    font-family: 'cheryl', sans-serif;
+    font-size: 2rem;
+    text-align: end;
+    z-index: 3;
+    margin-top: 20px;
+}
+#html {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#css {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#js {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+#java {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#sql {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+#github {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#markdown {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.bg {
+    position: absolute;
+    top: 0; left: 10px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: var(--opacite);
+}
+
+.devant {
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+}
+
+#containerMesComp3 {
+    margin: 20px 0px;
+    padding: 20px 0px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#containerMesComp3 img {
+    width: 50%;
+    border-radius: 3px;
+}
+
+#containerMesComp3Texte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerMesComp3Texte i {
+    padding: 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border: solid 1px var(--border-color-element);
+}
