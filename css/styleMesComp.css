@@ -42,16 +42,18 @@
     --background-box-timeline:  rgb(255, 255, 255);
     --liens-hover: #4D5A5D;
     --opacite: 0.7;
+    --border-i-hover: rgba(0, 0, 0, 0.5);
 }
 
 body.night {
-    --background-color-element: rgba(34, 48, 79, 0.3);
+    --background-color-element: rgba(34, 48, 79, 0.2);
     --border-color-element: rgba(0, 53, 122, 0.2);
     --colorText: #FFFFFF;
     --color-ligne: rgb(241, 235, 235);
     --background-box-timeline:  rgb(34, 48, 79);
     --liens-hover: #4A5770;
     --opacite: 0.2;
+    --border-i-hover: rgba(255, 255, 255, 0.3);
 }
 body.dusk {
     --background-color-element: rgba(193, 77, 80, 0.3);
@@ -61,6 +63,7 @@ body.dusk {
     --background-box-timeline:  rgb(193, 77, 80);
     --liens-hover: #4D5A5D;
     --opacite: 0.5;
+    --border-i-hover: rgba(0, 0, 0, 0.5);
 }
 
 #mainHeader {
@@ -74,6 +77,15 @@ body.dusk {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: solid 1px var(--border-color-element);
     color: var(--colorText);
+}
+.liens a {
+    margin-top: 20px;
+    color: var(--colorText);
+    text-decoration: none;
+}
+
+.liens a:hover {
+    color: var(--liens-hover);
 }
 
 #containerMesComp{
@@ -164,6 +176,12 @@ body.dusk {
     grid-row: 3;
 }
 
+.conatinerLogo:hover .devant {
+    transform: scale(1.2) rotate(-5deg);
+    filter: drop-shadow(0 4px 8px var(--border-i-hover));
+    transition: 0.2s;
+}
+
 .bg {
     position: absolute;
     top: 0; left: 10px;
@@ -175,7 +193,7 @@ body.dusk {
 
 .devant {
     position: absolute;
-    bottom: -30px;
+    bottom: -15px;
     right: 0;
     z-index: 2;
     width: 80px;
