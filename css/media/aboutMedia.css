@@ -1,7 +1,18 @@
+@media screen and (max-width: 1365px) {
+    #containerAPropos{
+        width: 100%;
+        padding-block: 30px;
+    
+    }
+}
 @media screen and (max-width: 1000px) {
+    .box-timeline {
+        height: 100%;
+    }
     .ligne {
         position: relative;
         left: 200px;
+        height: 1250px;
     }
     .rond {
         left: calc(50% + 200px);
@@ -10,8 +21,11 @@
         left: calc(50% - 50px);
     }
     .b0 {
-        left: calc(50% + 100px);
+        left: calc(50% + 10px);
     }
+
+    .r2,.b2{top: 500px;}
+    .r3,.b3{top: 900px;}
 
 }
 

@@ -167,3 +167,6 @@ body.night #containerFooter {
     color: var(--i-hover);
 }
 
+.tel {
+    display: none;
+}
