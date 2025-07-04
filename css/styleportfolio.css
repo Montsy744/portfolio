@@ -37,6 +37,13 @@
 .colorLinux {
     color: var(--linux);
 }
+.colorPython {
+    background: linear-gradient(135deg, #306998 50%, #FFD43B 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
 
 :root {
     --background-color-element: rgba(255, 255, 255, 0.3);
@@ -82,7 +89,7 @@ body.dusk {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     gap: 30px;
 }
 
@@ -121,6 +128,10 @@ body.dusk {
 #webCard9 {
     grid-column: 3;
     grid-row: 3 ;
+}
+#webCard10 {
+    grid-column: 1;
+    grid-row: 4 ;
 }
 
 #modalContainerUnniversitaire {

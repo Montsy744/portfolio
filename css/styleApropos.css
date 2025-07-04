@@ -313,3 +313,7 @@ body.dusk {
     color: var(--colorText);
     font-size: 1.3rem;
 }
+
+#box-timeline-telephone {
+    display: none;
+}
