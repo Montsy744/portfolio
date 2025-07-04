@@ -33,6 +33,13 @@
 .colorMd{
     color: var(--md);
 }
+.colorPython {
+    background: linear-gradient(135deg, #306998 50%, #FFD43B 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
 
 :root {
     --background-color-element: rgba(255, 255, 255, 0.3);
@@ -176,6 +183,11 @@ body.dusk {
     grid-row: 3;
 }
 
+#python {
+    grid-column: 2;
+    grid-row: 3;
+}
+
 .conatinerLogo:hover .devant {
     transform: scale(1.2) rotate(-5deg);
     filter: drop-shadow(0 4px 8px var(--border-i-hover));
@@ -232,4 +244,45 @@ body.dusk {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border: solid 1px var(--border-color-element);
+}
+#containerMesComp4 {
+    margin: 20px 0px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerMesComp4 h2 {
+    padding: 40px;
+}
+
+
+#containerMesComp4 .soft-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+
+}
+
+.soft-skills-list>li {
+    padding: 10px 20px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.7));
+    color: var(--colorText);
+    font-size: 1.3rem;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
 }
