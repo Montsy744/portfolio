@@ -1,5 +1,5 @@
 /*tel*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 650px) {
     #containerHeader, #gaucheHeader {
         display: flex;
         justify-content: center;

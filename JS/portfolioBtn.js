@@ -1,5 +1,12 @@
-const portfolio = document.getElementById("modal1");
-const university = document.getElementById("modal2");
+let portfolio, university;
+
+if (window.innerWidth > 1000) {
+    portfolio = document.getElementById("modal1");
+    university = document.getElementById("modal2");
+} else {
+    portfolio = document.getElementById("modal3");
+    university = document.getElementById("modal4");
+}
 
 portfolio.classList.remove("show");
 university.classList.remove("show");
