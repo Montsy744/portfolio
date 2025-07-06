@@ -49,9 +49,9 @@ function showModal(modalToShow, btnToHighlight) {
     
     // Mettre en surbrillance le bouton sélectionné en fonction de jour/nuit
     if (checkbox.checked) {
-        btnToHighlight.style.backgroundColor = "#597C3A"; // Couleur de fond du bouton actif
+        btnToHighlight.style.backgroundColor = "#B5A76E"; // Couleur de fond du bouton actif
     } else {
-        btnToHighlight.style.backgroundColor = "#2F3F78"; // Couleur de fond du bouton actif
+        btnToHighlight.style.backgroundColor = "#B5A76E"; // Couleur de fond du bouton actif
     }
 
     btnActif = btnToHighlight;

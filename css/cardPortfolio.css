@@ -7,7 +7,8 @@
     --background-color-element: rgba(255, 255, 255, 0.3);
     --color-background-image-1: #A5D5DF;
     --color-background-image-2: #597C3A;
-    --background-color-card: #f7d1d1;
+    --background-color-card: #B5A76E;
+    --background-color-cardTel: #F7D1D1;
     --border-color-element: rgba(255, 255, 255, 0.2);
     --colorText: #000000;
     --color-btn-card: antiquewhite;
@@ -20,6 +21,7 @@ body.night {
     --color-background-image-1: #1E3263;
     --color-background-image-2: #2F3F78;
     --background-color-card: #011122;
+    --background-color-cardTel: #011122;
     --border-color-element: rgba(0, 53, 122, 0.2);
     --colorText: #FFFFFF;
     --color-btn-card: rgba(34, 48, 79, 0.3);
@@ -31,6 +33,7 @@ body.dusk {
     --color-background-image-1: #051025;
     --color-background-image-2: #A03B3E;
     --background-color-card: #F7D1D1;
+    --background-color-cardTel: #F7D1D1;
     --colorText: #000000;
     --color-btn-card: antiquewhite;
     --color-border-btn-card: antiquewhite;
@@ -92,6 +95,7 @@ body.dusk {
     font-size: 14px;
     color: var(--colorText);
     line-height: 1.4;
+    text-align: justify;
 }
 
 .card:hover img {
@@ -170,7 +174,7 @@ body.dusk {
 }
 
 .cardTel {
-    background-color: var(--background-color-card);
+    background-color: var(--background-color-cardTel);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: solid 1px var(--border-color-element);
@@ -189,6 +193,7 @@ body.dusk {
     flex-direction: column;
     background: linear-gradient(-45deg, var(--color-background-image-2) 0%, var(--color-background-image-1) 100% );
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .imgContainerTel img {
@@ -220,9 +225,9 @@ body.dusk {
 .card__description_tel {
     font-size: 1.3rem;
     color: var(--colorText);
-    text-align: justify;
     padding: 10px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .btnCardTel {
