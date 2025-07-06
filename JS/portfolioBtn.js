@@ -48,13 +48,29 @@ function showModal(modalToShow, btnToHighlight) {
 
     
     // Mettre en surbrillance le bouton sélectionné en fonction de jour/nuit
-    if (checkbox.checked) {
-        btnToHighlight.style.backgroundColor = "#B5A76E"; // Couleur de fond du bouton actif
+    if (document.body.classList.contains('dusk')) {
+        btnToHighlight.style.backgroundColor = "#B5A76E"; // Couleur dusk
+    } else if (document.body.classList.contains('night')) {
+        btnToHighlight.style.backgroundColor = "#2F3F78"; // Couleur night
     } else {
-        btnToHighlight.style.backgroundColor = "#B5A76E"; // Couleur de fond du bouton actif
+        btnToHighlight.style.backgroundColor = "#597C3A"; // Couleur jour (par défaut)
     }
 
     btnActif = btnToHighlight;
+}
+
+function updateActiveBtnColor() {
+    // Réinitialise les deux boutons
+    btnPortfolio.style.backgroundColor = "transparent";
+    btnuniversity.style.backgroundColor = "transparent";
+    // Applique la couleur sur le bouton actif selon la classe du body
+    if (document.body.classList.contains('dusk')) {
+        btnActif.style.backgroundColor = "#B5A76E";
+    } else if (document.body.classList.contains('night')) {
+        btnActif.style.backgroundColor = "#2F3F78";
+    } else {
+        btnActif.style.backgroundColor = "#597C3A";
+    }
 }
 
 // Afficher le modal portfolio par défaut
