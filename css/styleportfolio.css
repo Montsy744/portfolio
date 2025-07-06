@@ -200,3 +200,35 @@ body.dusk {
     display: block; /* Afficher le modal */
     opacity: 1; /* Opacité finale */
 }
+
+.modalContainerVideo {
+    position: fixed;
+    left: 0; /*sans marge a gauche*/
+    top: 0; /*sans marge en haut*/
+    backdrop-filter: blur(25px);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#modalContentVideo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#closeModalBtn {
+    border: solid 1px var(--border-color-element);
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 10px 0px;
+    background-color: var(--background-color-element);
+    color: var(--colorText);
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
