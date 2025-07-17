@@ -1,0 +1,7 @@
+@media screen and (max-width: 700px) {
+    
+    .containerArticles {
+        width: 100%;
+        padding: 10px;
+    }
+}

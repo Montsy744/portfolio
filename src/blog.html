@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="./../css/styleGeneral.css" />
     <link rel="stylesheet" type="text/css" href="./../css/styleBlog.css" />
 
+    <link rel="stylesheet" type="text/css" href="./../css/media/blogMedia.css" />
     <link rel="stylesheet" type="text/css" href="./../css/media/generalMedia.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -52,7 +53,59 @@
         <div id="mainHeader" class="animate__animated animate__fadeInDown">
             <h1>Blog</h1>
             <p>Bienvenue sur mon blog ! Ici, je partage mes réflexions, mes projets et mes découvertes dans le monde du développement web et de la technologie.</p>
+            <div class="liens">
+                <a href="#Mesoutilspréféréspourdévelopper">Mes outils préférés pour développer</a>
+                <a href="#MesextensionsVSCodeindispensables">Mes extensions VS Code indispensables</a>
+            </div>
         </div>
+        <div class="containerArticles">
+            <div class="articles animate__animated animate__fadeInUp" id="Mesoutilspréféréspourdévelopper">
+                <div class="headerArticles">
+                    <h1>Mes outils préférés pour développer</h1>
+                    <p>Publié le 15 juillet 2025</p>
+                    <p>Par Hugo Straseele</p>
+                </div>
+                <div class="mainArticles">
+                    <p>Quand on commence à coder, on se perd vite dans la tonne d’outils disponibles. Entre les éditeurs, les navigateurs, les extensions, les gestionnaires de versions… ça peut vite tourner à l’usine à gaz. Alors aujourd’hui, je te partage mes indispensables — simples, efficaces, et que j’utilise presque tous les jours.</p>
+                    <h2>VS Code</h2>
+                    <p>Mon éditeur de code préféré. Léger, puissant, plein d’extensions utiles (Prettier, Live Server, etc.), et super personnalisable. C’est un peu mon bureau de travail numérique.</p>
+                    <h2>Google Chrome + les DevTools</h2>
+                    <p>Rien de mieux pour tester et déboguer un site en temps réel. Les outils de développement intégrés sont juste indispensables pour comprendre ce qui se passe sous le capot.</p>
+                    <h2>Git + GitHub</h2>
+                    <p>Pour sauvegarder mon code, collaborer, ou revenir en arrière quand j’ai tout cassé (ça arrive). Même en solo, c’est un réflexe à prendre.</p>
+                </div>
+            </div>
+
+            <div class="articles animate__animated animate__fadeInUp" id="MesextensionsVSCodeindispensables">
+                <div class="headerArticles">
+                    <h1>Mes extensions VS Code indispensables</h1>
+                    <p>Publié le 17 juillet 2025</p>
+                    <p>Par Hugo Straseele</p>
+                </div>
+                <div class="mainArticles">
+                    <p>Visual Studio Code, c’est déjà super. Mais avec les bonnes extensions, ça devient vraiment un outil de travail ultra puissant. Voici celles que j’utilise tous les jours pour améliorer mon confort, mon code et ma productivité.</p>
+                    <h2>Prettier - Code formatter</h2>
+                    <p>Mon formatteur automatique préféré. Il s’occupe de l’indentation, des espaces, des virgules… Bref, il fait le ménage pendant que je code. Résultat : un code propre, cohérent et lisible sans y penser.</p>
+                    <h2>indent-rainbow</h2>
+                    <p>Chaque niveau d’indentation a une couleur différente. Simple, mais super pratique pour lire un code bien imbriqué (coucou HTML et les grosses fonctions JS).</p>
+                    <h2>Auto Rename Tag</h2>
+                    <p>Quand je modifie une balise HTML ou JSX, la balise fermante se met à jour toute seule. Un petit gain de temps, mais qui fait toute la différence quand on enchaîne les composants.</p>
+                    <h2>Live Server</h2>
+                    <p>Un clic, et mon projet s’ouvre dans le navigateur avec rechargement automatique à chaque sauvegarde. Parfait pour tester mes pages en temps réel sans prise de tête.</p>
+                    <h2>CSS Peek</h2>
+                    <p>Je peux survoler une classe CSS dans mon HTML pour voir directement son style défini ailleurs. Plus besoin de fouiller dans les fichiers, je gagne un temps fou.</p>
+                    <h2>vscode-pdf</h2>
+                    <p>Parfois, j’ai besoin de lire un PDF sans quitter l’éditeur. Cette extension me permet de le faire directement dans VS Code. Pratique pour garder tous mes outils au même endroit.</p>
+                    <h2>Git Graph</h2>
+                    <p>Un super visualiseur de branches Git. Idéal pour suivre l’historique de mon projet, voir les commits, les fusions, et mieux comprendre le flow Git.</p>
+                    <h2>Material Icon Theme</h2>
+                    <p>Des icônes stylées pour mes fichiers et dossiers. Ce n’est pas indispensable, mais ça rend l’interface plus agréable — et franchement, c’est toujours sympa de bosser dans un environnement joli.</p>
+                </div>
+            </div>
+
+
+        </div>
+
     </main>
     <footer class="animate__animated animate__fadeInUp">
         <div id="containerFooter">
@@ -66,6 +119,7 @@
             </div>
     </footer>
     
+    <script src="./../JS/defilement.js"></script>
     <script src="./../JS/btnNuitJour.js"></script>
 </body>
 </html>
