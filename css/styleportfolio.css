@@ -137,6 +137,10 @@ body.dusk {
     grid-column: 2;
     grid-row: 4 ;
 }
+#webCard12 {
+    grid-column: 3;
+    grid-row: 4 ;
+}
 
 #modalContainerUnniversitaire {
     background-color: var(--background-color-element);
