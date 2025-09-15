@@ -38,6 +38,18 @@ body.dusk {
     font-family: 'Roboto-Bold';
     src: url('./../public/police/Roboto_Condensed-Bold.ttf');
 }
+@font-face {
+    font-family: 'roboto-light';
+    src: url('./../public/police/Roboto-Light.ttf');
+}
+@font-face {
+    font-family: 'chery';
+    src: url('./../public/police/CherryBombOne-Regular.ttf');
+}
+
+#mainHeader h1, #headerMain h1 {
+    font-family: 'chery'
+}
 
 body {
     min-height: 100vh;

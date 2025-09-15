@@ -1,0 +1,215 @@
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('./../public/police/Roboto_Condensed-Bold.ttf');
+}
+:root {
+    --html: #e86026;
+    --css: #0f6cac;
+    --Js: #f4dd1b;
+    --git: #ed4b26;
+    --java: #5382a1;
+    --sql: #FE0809;
+    --md: #6CA3F7;
+    --react: #18CDDC;
+    --linux: #0B0B0B;
+}
+.colorHtml {
+    color: var(--html);
+}
+.colorCss {
+    color: var(--css);
+}
+.colorJs {
+    color: var(--Js);
+}
+.colorJava {
+    color: var(--java);
+}
+.colorSql {
+    color: var(--sql)
+}
+.colorGit {
+    color: var(--git);
+}
+.colorMd{
+    color: var(--md);
+}
+.colorReact {
+    color: var(--react);
+}
+.colorLinux {
+    color: var(--linux);
+}
+.colorPython {
+    background: linear-gradient(135deg, #306998 50%, #FFD43B 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+:root {
+    --background-color-element: rgba(255, 255, 255, 0.3);
+    --border-color-element: rgba(255, 255, 255, 0.2);
+    --colorText: #000000;
+    --background-color-carte: rgba(255, 255, 255, 0.8);
+    --border-color-carte: rgba(0, 0, 0, 0.8);
+    --background-color-skils: rgba(83, 118, 67, 0.8); 
+}
+
+body.night {
+    --background-color-element: rgba(34, 48, 79, 0.3);
+    --border-color-element: rgba(0, 53, 122, 0.2);
+    --colorText: #FFFFFF;
+    --background-color-carte: rgba(34, 48, 79, 0.8);
+    --border-color-carte: rgba(255, 255, 255, 0.8);
+    --background-color-skils: rgba(6,29,56, 0.8);
+}
+
+body.dusk {
+    --background-color-carte: rgba(193, 77, 80, 0.8);
+    --border-color-carte: rgba(0, 0, 0, 0.8);
+    --background-color-skils: #82374F;
+}
+#containerMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    width: 70%;
+}
+#headerMain {
+    margin: 20px 0px;;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+    width: 100%;
+}
+
+#headerMain p {
+    font-size:  1.3rem;
+    margin: 0 0 5px 0; /* haut droite bas gauche */
+}
+
+#headerMain h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+#containerDefi {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+
+    padding: 20px;
+    
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+}
+
+#defi1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.carte{
+    border: solid 3px var(--border-color-carte);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: var(--background-color-carte);
+}
+
+.containerImg {
+    width: 100%;
+    height: 100%;
+    margin: 10px 0px 20px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerImg img {
+    width: 100%;
+    height: auto;
+    margin: 0px 5px 0px 5px;
+}
+
+.containerSkils {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--background-color-skils);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.containerSkils i {
+    padding: 5px;
+    border: solid 2px var(--border-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: var(--background-color-element);
+}
+
+.containerText {
+    padding: 0px 20px 20px 20px;
+}
+.containerText h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: 'Roboto-Bold';
+    text-align: center;
+}
+.containerText p, .containerText ul {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.containerText ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+.containerLien {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--background-color-skils);
+}
+
+.containerLien a {
+    color: var(--colorText);
+    border: solid 3px var(--border-color-element);
+    border-radius: 5px;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 1.3rem;
+    margin: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.containerLien a:hover {
+    border-radius: 10px;
+    transition-duration: 1s ;
+}
+.containerLien a:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15) inset;
+}
