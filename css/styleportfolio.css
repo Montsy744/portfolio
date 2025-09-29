@@ -67,6 +67,7 @@ body.dusk {
     margin: 20px 0px;;
     text-align: center;
     font-size: 1.3rem;
+    width: 70%;
     padding: 20px;
     background-color: var(--background-color-element);
     border-radius: 10px;
@@ -78,6 +79,7 @@ body.dusk {
 #containerPortfolio {
     font-size: 1.3rem;
     color: var(--colorText);
+    width: 70%;
 }
 
 #modalContainer {
