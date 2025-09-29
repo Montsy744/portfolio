@@ -72,6 +72,11 @@ body.theme-fade::before {
     opacity: 0;
 }
 
+p {
+    line-height: 1.3;
+    font-family: 'roboto-light';
+}
+
 body.night::before {
     background: url(./../public/img/backgrounds/bwca-night.png) center center / cover no-repeat;
     opacity: 1;

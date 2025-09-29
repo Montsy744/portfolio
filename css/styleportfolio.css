@@ -82,6 +82,25 @@ body.dusk {
     width: 70%;
 }
 
+.expliPerso {
+    margin: 20px 0px;;
+    text-align: justify;
+    font-size: 1.3rem;
+    padding: 40px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+}
+
+.expliPerso h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'chery';
+}
+
 #modalContainer {
     background-color: var(--background-color-element);
     border-radius: 10px;
