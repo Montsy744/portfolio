@@ -82,7 +82,7 @@ body.dusk {
     width: 70%;
 }
 
-.expliPerso {
+.expliPerso, .expliPersoTel {
     margin: 20px 0px;;
     text-align: justify;
     font-size: 1.3rem;
@@ -94,12 +94,13 @@ body.dusk {
     color: var(--colorText);
 }
 
-.expliPerso h1 {
+.expliPerso h1, .expliPersoTel h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
     font-family: 'chery';
 }
+
 
 #modalContainer {
     background-color: var(--background-color-element);
