@@ -173,12 +173,12 @@ body.dusk {
 .box-timeline {
     width: 100%;
     position: relative;
-    height: 1500px;
+    height: 1800px;
     padding: 80px 0 250px 0;
 }
 
 .ligne {
-    height: 1100px;
+    height: 1550px;
     width: 8px;
     margin: 0 auto;
     background: var(--color-ligne);
@@ -203,11 +203,11 @@ body.dusk {
 .r1{top: 80px;}
 .r2{top: 386px;}
 .r3{top: 692px;}
+.r4{top: 1025px;}
 
 .box {
     color: var(--colorText);
     width: 400px;
-    min-height: 200px;
     padding: 20px;
     position: absolute;
     border-radius: 3px;
@@ -230,7 +230,10 @@ body.dusk {
     top: 692px;
     left: calc(50% - 270px);
 }
-
+.b4 {
+    top: 1025px;
+    left: calc(50% + 270px);
+}
 .box p {
     font-family: 'Roboto-light';
     text-align: justify;
