@@ -85,14 +85,14 @@ body.dusk {
 
 .card__title {
     margin: 0;
-    font-size: 24px;
+    font-size: 18px;
     color: var(--colorText);
     font-weight: 700;
 }
 
 .card__description {
     margin: 10px 0 0;
-    font-size: 14px;
+    font-size: 12px;
     color: var(--colorText);
     line-height: 1.4;
     text-align: justify;
