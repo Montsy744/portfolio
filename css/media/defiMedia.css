@@ -1,0 +1,24 @@
+@media screen and (max-width: 650px) {
+    #containerMain {
+        width: 90%;
+    }
+
+    #containerDefi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .containerImg {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerLien {
+        display: flex;
+        flex-direction: column;
+    }
+}
