@@ -12,7 +12,7 @@
     .ligne {
         position: relative;
         left: 200px;
-        height: 1250px;
+        height: 1950px;
     }
     .rond {
         left: calc(50% + 200px);
@@ -24,8 +24,9 @@
         left: calc(50% + 10px);
     }
 
-    .r2,.b2{top: 500px;}
-    .r3,.b3{top: 900px;}
+    .r2,.b2{top: 540px;}
+    .r3,.b3{top: 950px;}
+    .r4,.b4{top: 1390px}
 
 }
 
