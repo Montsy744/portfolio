@@ -110,8 +110,11 @@
         border: solid 1px rgba(0, 53, 122, 0.2);
         border-radius: 10px;
         text-align: justify;
-
         margin: 10px;
+    }
+
+    .box-tel h3 {
+        text-align: center;
     }
     
 }
