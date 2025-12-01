@@ -16,6 +16,11 @@ body.dusk {
     --text-color: #000000;
 }
 
+#mainAccueil, header, footer {
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
 #containerImage {
     filter: drop-shadow(0 4px 8px var(--color-ombre-logo));
 }

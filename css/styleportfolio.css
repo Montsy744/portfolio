@@ -9,34 +9,43 @@
     --react: #18CDDC;
     --linux: #0B0B0B;
 }
+
 .colorHtml {
     color: var(--html);
 }
+
 .colorCss {
     color: var(--css);
 }
+
 .colorJs {
     color: var(--Js);
 }
+
 .colorJava {
     color: var(--java);
 }
+
 .colorSql {
     color: var(--sql)
 }
+
 .colorGit {
     color: var(--git);
 }
-.colorMd{
+
+.colorMd {
     color: var(--md);
 }
 
 .colorReact {
     color: var(--react);
 }
+
 .colorLinux {
     color: var(--linux);
 }
+
 .colorPython {
     background: linear-gradient(135deg, #306998 50%, #FFD43B 50%);
     -webkit-background-clip: text;
@@ -49,7 +58,7 @@
     --background-color-element: rgba(255, 255, 255, 0.3);
     --border-color-element: rgba(255, 255, 255, 0.2);
     --colorText: #000000;
-    --color-background-btn-choix: #B5A76E;
+    --color-background-btn-choix: #597C3A;
 }
 
 body.night {
@@ -64,7 +73,8 @@ body.dusk {
 }
 
 #mainHeader {
-    margin: 20px 0px;;
+    margin: 20px 0px;
+    ;
     text-align: center;
     font-size: 1.3rem;
     width: 70%;
@@ -82,8 +92,10 @@ body.dusk {
     width: 70%;
 }
 
-.expliPerso, .expliPersoTel {
-    margin: 20px 0px;;
+.expliPerso,
+.expliPersoTel {
+    margin: 20px 0px;
+    ;
     text-align: justify;
     font-size: 1.3rem;
     padding: 40px;
@@ -94,7 +106,8 @@ body.dusk {
     color: var(--colorText);
 }
 
-.expliPerso h1, .expliPersoTel h1 {
+.expliPerso h1,
+.expliPersoTel h1 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -117,51 +130,62 @@ body.dusk {
 
 #webCard1 {
     grid-column: 1;
-    grid-row: 1 ;
+    grid-row: 1;
 }
+
 #webCard2 {
     grid-column: 2;
-    grid-row: 1 ;
+    grid-row: 1;
 }
+
 #webCard3 {
     grid-column: 3;
-    grid-row: 1 ;
+    grid-row: 1;
 }
+
 #webCard4 {
     grid-column: 1;
-    grid-row: 2 ;
+    grid-row: 2;
 }
+
 #webCard5 {
-    grid-column:2;
-    grid-row: 2 ;
+    grid-column: 2;
+    grid-row: 2;
 }
+
 #webCard6 {
     grid-column: 3;
-    grid-row: 2 ;
+    grid-row: 2;
 }
+
 #webCard7 {
     grid-column: 1;
-    grid-row: 3 ;
+    grid-row: 3;
 }
+
 #webCard8 {
     grid-column: 2;
-    grid-row: 3 ;
+    grid-row: 3;
 }
+
 #webCard9 {
     grid-column: 3;
-    grid-row: 3 ;
+    grid-row: 3;
 }
+
 #webCard10 {
     grid-column: 1;
-    grid-row: 4 ;
+    grid-row: 4;
 }
+
 #webCard11 {
     grid-column: 2;
-    grid-row: 4 ;
+    grid-row: 4;
 }
+
 #webCard12 {
     grid-column: 3;
-    grid-row: 4 ;
+    grid-row: 4;
 }
 
 #modalContainerUnniversitaire {
@@ -179,31 +203,37 @@ body.dusk {
 
 #uniCard1 {
     grid-column: 1;
-    grid-row: 1 ;
+    grid-row: 1;
 }
+
 #uniCard2 {
     grid-column: 2;
-    grid-row: 1 ;
+    grid-row: 1;
 }
+
 #uniCard3 {
     grid-column: 3;
-    grid-row: 1 ;
+    grid-row: 1;
 }
+
 #uniCard4 {
     grid-column: 1;
-    grid-row: 2 ;
+    grid-row: 2;
 }
+
 #uniCard5 {
-    grid-column:2;
-    grid-row: 2 ;
+    grid-column: 2;
+    grid-row: 2;
 }
+
 #uniCard6 {
     grid-column: 3;
-    grid-row: 2 ;
+    grid-row: 2;
 }
+
 #uniCard7 {
     grid-column: 1;
-    grid-row: 3 ;
+    grid-row: 3;
 }
 
 #choix {
@@ -229,20 +259,27 @@ body.dusk {
 }
 
 .modal {
-    display: none; /* Masquer par défaut */
-    opacity: 0; /* Opacité initiale */
-    transition: opacity 1s ease; /* Transition d'opacité */
+    display: none;
+    /* Masquer par défaut */
+    opacity: 0;
+    /* Opacité initiale */
+    transition: opacity 1s ease;
+    /* Transition d'opacité */
 }
 
 .modal.show {
-    display: block; /* Afficher le modal */
-    opacity: 1; /* Opacité finale */
+    display: block;
+    /* Afficher le modal */
+    opacity: 1;
+    /* Opacité finale */
 }
 
 .modalContainerVideo {
     position: fixed;
-    left: 0; /*sans marge a gauche*/
-    top: 0; /*sans marge en haut*/
+    left: 0;
+    /*sans marge a gauche*/
+    top: 0;
+    /*sans marge en haut*/
     backdrop-filter: blur(25px);
     height: 100%;
     width: 100%;
