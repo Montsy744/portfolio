@@ -3,23 +3,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Bienvenue sur mon portfolio. Ce site rassemble une sélection de mes projets, compétences et expériences dans le domaine du développement web. Il me permet de partager mon univers professionnel, de mettre en valeur mon travail, et de proposer une vision claire de ce que je sais faire. N’hésite pas à parcourir les différentes sections pour en savoir plus sur mon parcours et mes réalisations."/>
-    <meta name="keywords" content="Portfolio, Hugo Straseele, web developpeur, dev, web, html, css, javascript"/>
     <meta name="author" content="Hugo Straseele" />
     <meta name="author" content="Montsy744 - Web developpeur" />
-    <meta property="og:title" content="Hugo Straseele Portfolio" />
-    <meta property="og:description" content="Bienvenue sur mon portfolio. Ce site rassemble une sélection de mes projets, compétences et expériences dans le domaine du développement web. Il me permet de partager mon univers professionnel, de mettre en valeur mon travail, et de proposer une vision claire de ce que je sais faire. N’hésite pas à parcourir les différentes sections pour en savoir plus sur mon parcours et mes réalisations." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://montsy744.github.io/portfolio/" />
     <link rel="icon" type="image/svg+xml" href="./public/img/logo/logoSansNom.PNG" />
-    <title>Hugo Straseele Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="./css/styleGeneral.css" />
-    <link rel="stylesheet" type="text/css" href="./css/btnJourNuit.css" />
-    <link rel="stylesheet" type="text/css" href="./css/styleAccueil.css" />
-    <link rel="stylesheet" type="text/css" href="./css/loaderCss.css" />
+    <title>Mention légale</title>
+    <link rel="stylesheet" type="text/css" href="./../css/styleGeneral.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/btnJourNuit.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/loaderCss.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/mentionLegale.css" />
 
-    <link rel="stylesheet" type="text/css" href="./css/media/generalMedia.css" />
-    <link rel="stylesheet" type="text/css" href="./css/media/homeMedia.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/media/generalMedia.css" />
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -38,11 +31,11 @@
     <header>
         <div id="containerHeader">
             <div id="gaucheHeader">
-                <a id="lienHeader1" href="./index.html">Accueil</a>
-                <a id="lienHeader2" href="./page/about.html">A Propos</a>
-                <a id="lienHeader3" href="./page/comp.html">Mes compétences</a>
-                <a id="lienHeader5" href="./page/portfolio.html">Portfolio</a>
-                <a id="lienHeader6" href="./page/defis.html">Défis</a>
+                <a id="lienHeader1" href="./../index.html">Accueil</a>
+                <a id="lienHeader2" href="./about.html">A Propos</a>
+                <a id="lienHeader3" href="./comp.html">Mes compétences</a>
+                <a id="lienHeader5" href="./portfolio.html">Portfolio</a>
+                <a id="lienHeader6" href="./defis.html">Défis</a>
             </div>
             <div id="droitHeader">
 
@@ -66,23 +59,22 @@
             </div>
         </div>
     </header>
-    <main id="mainAccueil">
+    <main>
+        <div id="mainHeader" class="animate__animated animate__fadeInDown">
+            <h1>Mention légales</h1>
+        </div>
         <div id="containerMain">
-            <div id="containerImage">
-                <img src="./public/img/logo/logo-removebg.png" alt="Logo de Hugo Straseele" class="animate__animated animate__fadeIn"/>
-            </div>
-            <div id="containerPresentation">
-                <p class="animate__animated animate__fadeIn">Développeur web passionné, je transforme vos idées en expériences digitales uniques.</p>
-                <div><a href="./page/portfolio.html" class="btn animate__animated animate__fadeIn" id="btnPortfolio">Voir mon portfolio</a></div>
-            </div>
+            <h2>Éditeur :</h2><p>Ce site est un portfolio personnel réalisé par Hugo Straseele.</p>
+            <h2>Hébergement :</h2><p>GitHub Inc. – 88 Colin P. Kelly Jr Street, San Francisco, CA 94107, United States – <a href="https://github.com/" target="_blank">https://github.com/.</a></p>
+            <h2>Propriété intellectuelle :</h2><p>L’ensemble des contenus de ce site (textes, images, code) est protégé. Toute reproduction nécessite l’autorisation de l’auteur.</p>
+            <h2>Données personnelles :</h2><p>Ce site ne collecte aucune donnée personnelle. </p>
         </div>
     </main>
     <footer class="animate__animated animate__fadeInUp">
         <div id="containerFooter">
             <div id="gaucheFooter">
                 <p>© 2025 Hugo Straseele.</p>
-                <a href="./page/mentionLegal.html" class="underline-effect">mention légales</a>
-
+                
             </div>
             <div id="droitFooter">
                 <a href="https://gitlab.univ-lille.fr/hugo.straseele.etu" target="_blank"><i class="fa-brands fa-square-gitlab fa-2x"></i></a>
@@ -92,7 +84,7 @@
             </div>
     </footer>
     
-    <script src="./JS/btnNuitJour.js"></script>
-    <script src="./JS/loader.js"></script>
+    <script src="./../JS/btnNuitJour.js"></script>
+    <script src="./../JS/loader.js"></script>
 </body>
 </html>

@@ -38,16 +38,19 @@ body.dusk {
     font-family: 'Roboto-Bold';
     src: url('./../public/police/Roboto_Condensed-Bold.ttf');
 }
+
 @font-face {
     font-family: 'roboto-light';
     src: url('./../public/police/Roboto-Light.ttf');
 }
+
 @font-face {
     font-family: 'chery';
     src: url('./../public/police/CherryBombOne-Regular.ttf');
 }
 
-#mainHeader h1, #headerMain h1 {
+#mainHeader h1,
+#headerMain h1 {
     font-family: 'chery'
 }
 
@@ -68,6 +71,7 @@ body::before {
     opacity: 1;
     pointer-events: none;
 }
+
 body.theme-fade::before {
     opacity: 0;
 }
@@ -182,6 +186,40 @@ body.night #containerFooter {
 
 #containerFooter a i:hover {
     color: var(--i-hover);
+}
+
+#gaucheFooter a {
+    color: var(--liens);
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-family: 'roboto-light';
+}
+
+#gaucheFooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.underline-effect {
+    position: relative;
+    text-decoration: none;
+}
+
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--liens);
+    transition: width 0.3s ease-out;
+}
+
+.underline-effect:hover::after {
+    width: 100%;
 }
 
 .tel {

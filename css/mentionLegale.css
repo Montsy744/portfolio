@@ -1,0 +1,57 @@
+:root {
+    --background-color-element: rgba(255, 255, 255, 0.3);
+    --text-color: #000000;
+}
+
+body.night {
+    --background-color-element: rgba(34, 48, 79, 0.3);
+    --text-color: #FFFFFF;
+}
+
+body.dusk {
+    --background-color-element: rgba(193, 77, 80, 0.3);
+    --text-color: #000000;
+}
+
+@font-face {
+    font-family: 'roboto-light';
+    src: url('./../public/police/Roboto-Light.ttf');
+}
+
+#mainHeader {
+    background-color: var(--background-color-element);
+    color: var(--text-color);
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+#containerMain {
+
+    margin: 40px 0px;
+    background-color: var(--background-color-element);
+    color: var(--text-color);
+    width: 70%;
+    text-align: justify;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+#containerMain p {
+    font-size: 1.1rem;
+    font-family: 'roboto-light';
+}
+
+#containerMain p a {
+    color: var(--text-color);
+}
+
+#containerMain h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
