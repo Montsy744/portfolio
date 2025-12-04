@@ -8,6 +8,7 @@
     --md: #6CA3F7;
     --react: #18CDDC;
     --linux: #0B0B0B;
+    --C: #6295CD;
 }
 
 .colorHtml {
@@ -52,6 +53,10 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     color: transparent;
+}
+
+.colorC {
+    color : var(--C);
 }
 
 :root {
