@@ -1,120 +1,139 @@
 @media screen and (max-width: 1365px) {
-    #containerAPropos{
-        width: 100%;
-        padding-block: 30px;
-    
-    }
+  #containerAPropos {
+    width: 100%;
+    padding-block: 30px;
+  }
 }
 @media screen and (max-width: 1000px) {
-    .box-timeline {
-        height: 100%;
-    }
-    .ligne {
-        position: relative;
-        left: 200px;
-        height: 1950px;
-    }
-    .rond {
-        left: calc(50% + 200px);
-    }
-    .box {
-        left: calc(50% - 50px);
-    }
-    .b0 {
-        left: calc(50% + 10px);
-    }
+  .box-timeline {
+    height: 100%;
+  }
+  .ligne {
+    position: relative;
+    left: 200px;
+    height: 1950px;
+  }
+  .rond {
+    left: calc(50% + 200px);
+  }
+  .box {
+    left: calc(50% - 50px);
+  }
+  .b0 {
+    left: calc(50% + 10px);
+  }
 
-    .r2,.b2{top: 540px;}
-    .r3,.b3{top: 950px;}
-    .r4,.b4{top: 1390px}
-
+  .r2,
+  .b2 {
+    top: 540px;
+  }
+  .r3,
+  .b3 {
+    top: 950px;
+  }
+  .r4,
+  .b4 {
+    top: 1390px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-    #containerAPropos {
-        width: 100%;
-        padding: 20px;
-    }
-    #containerAPropos1 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
+  #containerAPropos {
+    width: 100%;
+    padding: 20px;
+  }
+  #containerAPropos1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #containerAPropos2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    #containerAPropos1Texte {
-        font-size: 1.1rem;
-    }
+  .blocInfos {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 
-    h2 {
-        text-align: center;
-    }
+  .blocInfos div {
+    width: 100%;
+    margin: 10px 0px;
+  }
 
-    #containerBtnContact {
-        text-align: center;
-        font-size: 1rem;
-    }
+  #containerAPropos1Texte {
+    font-size: 1.1rem;
+  }
 
-    #skilsContaineur {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  h2 {
+    text-align: center;
+  }
 
-    #containerAPropos3 {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-    }
+  #containerBtnContact {
+    text-align: center;
+    font-size: 1rem;
+  }
 
-    #containerAPropos3 img {
-        width: 90%;
-        margin: 20px 0;
-    }
+  #skilsContaineur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #containerAPropos5 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  #containerAPropos3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 
-    .div4 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .div1  {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .box-timeline {
-        display: none;
-    }
+  #containerAPropos3 img {
+    width: 90%;
+    margin: 20px 0;
+  }
 
-    
-    #box-timeline-telephone {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px;
-    }
+  #containerAPropos5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #box-timeline-telephone .box-tel {
-        font-size: 1.5rem;
-        color: var(--text-color);
-        padding: 10px 15px;
-        background-color: var(--background-color-element);
-        border: solid 1px rgba(0, 53, 122, 0.2);
-        border-radius: 10px;
-        text-align: justify;
-        margin: 10px;
-    }
+  .div4 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .div1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box-timeline {
+    display: none;
+  }
 
-    .box-tel h3 {
-        text-align: center;
-    }
-    
+  #box-timeline-telephone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #box-timeline-telephone .box-tel {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 10px 15px;
+    background-color: var(--background-color-element);
+    border: solid 1px rgba(0, 53, 122, 0.2);
+    border-radius: 10px;
+    text-align: justify;
+    margin: 10px;
+  }
+
+  .box-tel h3 {
+    text-align: center;
+  }
 }
