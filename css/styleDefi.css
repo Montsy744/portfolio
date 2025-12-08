@@ -123,6 +123,11 @@ body.dusk {
     grid-column: 1;
 }
 
+#defi2 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
 .carte{
     border: solid 3px var(--border-color-carte);
     border-radius: 10px;
