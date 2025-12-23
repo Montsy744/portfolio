@@ -262,6 +262,17 @@ body.dusk {
     padding: 40px;
 }
 
+.divFramework {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.framework {
+    width: 15rem;
+}
+
 
 #containerMesComp5 {
     margin: 20px 0px;
