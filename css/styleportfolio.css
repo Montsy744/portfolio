@@ -9,6 +9,7 @@
     --react: #18CDDC;
     --linux: #0B0B0B;
     --C: #6295CD;
+    --Vue: #3EB27E;
 }
 
 .colorHtml {
@@ -57,6 +58,9 @@
 
 .colorC {
     color : var(--C);
+}
+.colorVue {
+    color : var(--Vue)
 }
 
 :root {
