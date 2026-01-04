@@ -245,7 +245,37 @@ body.dusk {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     border: solid 1px var(--border-color-element);
 }
+
 #containerMesComp4 {
+    margin: 20px 0px;
+    background-color: var(--background-color-element);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: solid 1px var(--border-color-element);
+    color: var(--colorText);
+    font-size: 1.3rem;
+
+    
+}
+
+#containerMesComp4 h2 {
+    padding: 40px;
+    text-align: center;
+}
+
+.divFramework {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.framework {
+    width: 15rem;
+}
+
+
+#containerMesComp5 {
     margin: 20px 0px;
     background-color: var(--background-color-element);
     border-radius: 10px;
@@ -259,12 +289,12 @@ body.dusk {
     flex-direction: column;
 }
 
-#containerMesComp4 h2 {
+#containerMesComp5 h2 {
     padding: 40px;
 }
 
 
-#containerMesComp4 .soft-skills-list {
+#containerMesComp5 .soft-skills-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
