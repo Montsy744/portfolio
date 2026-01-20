@@ -238,8 +238,9 @@ body.dusk {
     flex-direction: column;
 }
 
-#containerMesComp3Texte i {
+#containerMesComp3Texte img {
     padding: 10px;
+    width: 10rem;
     margin: 10px 0px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
