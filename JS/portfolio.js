@@ -7,8 +7,8 @@ const dataPortfolioPerso = [
     lienCode: "https://github.com/Montsy744/A_react_todo_list",
     lienSite: "https://a-react-todo-list.vercel.app/",
     imgStack: [
-      "./../public/img/stack/typescript.png",
-      "./../public/img/framework/react.png",
+       "./../public/img/stack/typescript.png",    
+      "./../public/img/framework/react.png",     
       "./../public/img/framework/vite.png",
       "./../public/img/stack/css.png",
       "./../public/img/stack/js.png",
