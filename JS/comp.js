@@ -1,39 +1,39 @@
 const dataComp = [
     {
         name: "HTML",
-        image: "./../public/img/stack/html.png"
+        image: "/public/img/stack/html.png"
     },
     {
         name: "CSS",
-        image: "./../public/img/stack/css.png"
+        image: "/public/img/stack/css.png"
     },
     {
         name: "JavaScript",
-        image: "./../public/img/stack/js.png"
+        image: "/public/img/stack/js.png"
     },
     {
         name: "Java",
-        image: "./../public/img/stack/java.png"
+        image: "/public/img/stack/java.png"
     },
     {
         name: "SQL",
-        image: "./../public/img/stack/sql.png"
+        image: "/public/img/stack/sql.png"
     },
     {
         name: "git",
-        image: "./../public/img/stack/git.png"
+        image: "/public/img/stack/git.png"
     },
     {
         name: "markdown",
-        image: "./../public/img/stack/md.png"
+        image: "/public/img/stack/md.png"
     },
     {
         name: "python",
-        image: "./../public/img/stack/python.png"
+        image: "/public/img/stack/python.png"
     },
     {
         name: "TypeScript",
-        image: "./../public/img/stack/TypeScript.png"
+        image: "/public/img/stack/TypeScript.png"
     }
     
 ]
