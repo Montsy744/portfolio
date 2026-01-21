@@ -7,8 +7,8 @@ const dataPortfolioPerso = [
     lienCode: "https://github.com/Montsy744/A_react_todo_list",
     lienSite: "https://a-react-todo-list.vercel.app/",
     imgStack: [
-       "./../public/img/stack/typescript.png",    
-      "./../public/img/framework/react.png",     
+       "./../public/img/stack/TypeScript.png",    
+      "./../public/img/framework/REACT.png",     
       "./../public/img/framework/vite.png",
       "./../public/img/stack/css.png",
       "./../public/img/stack/js.png",
@@ -23,7 +23,7 @@ const dataPortfolioPerso = [
     lienCode: "https://github.com/Montsy744/EditeurMd",
     lienSite: "https://montsy744.github.io/EditeurMd/",
     imgStack: [
-      "./../public/img/framework/react.png",
+      "./../public/img/framework/REACT.png",
       "./../public/img/stack/css.png",
       "./../public/img/stack/js.png",
       "./../public/img/stack/git.png",
