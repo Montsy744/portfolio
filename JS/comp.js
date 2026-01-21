@@ -9,11 +9,11 @@ const dataComp = [
     },
     {
         name: "JavaScript",
-        image: "./../public/img/stack/JS.png"
+        image: "./../public/img/stack/js.png"
     },
     {
         name: "Java",
-        image: "./../public/img/stack/Java.png"
+        image: "./../public/img/stack/java.png"
     },
     {
         name: "SQL",

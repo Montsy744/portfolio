@@ -19,7 +19,7 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
 
     <script src="https://kit.fontawesome.com/d84e16f660.js" crossorigin="anonymous"></script>
-
+    <script src="./../JS/portfolio.js" defer></script>
 </head>
 <body>
     <div id="loader">
@@ -146,10 +146,10 @@
                         <div class="imgContainer">
                             <img src="./../public/img/project/fondEdurhum.png" alt="Image du lancement du site" class="card__image">
                             <div>
-                                <i class="fa-brands fa-html5 fa-1x colorHtml"></i>
-                                <i class="fa-brands fa-css3-alt fa-1x colorCss"></i>
-                                <i class="fa-brands fa-js fa-1x colorJs"></i>
-                                <i class="fa-brands fa-git-alt fa-1x colorGit"></i>
+                                <img src="./../public/img/stack/html.png" alt="logo Html"  class="stack">
+                                <img src="./../public/img/stack/css.png" alt="logo Css"  class="stack">
+                                <img src="./../public/img/stack/JS.png" alt="logo JavaScript"  class="stack">
+                                <img src="./../public/img/stack/git.png" alt="logo git"  class="stack">
                             </div>
                         </div>
                         <div class="card__content">
@@ -483,7 +483,7 @@
                     <h1>Mes projets personnels</h1>
                     <p>En parallèle de mes études, je développe régulièrement des projets personnels afin d’explorer de nouvelles technologies et d’approfondir mes compétences. Ces réalisations me permettent de tester des idées, de me former à des outils récents et de concrétiser ma curiosité pour le développement informatique. Qu’il s’agisse d’applications web, de petits jeux ou d’outils expérimentaux, chaque projet constitue pour moi un terrain d’apprentissage et d’innovation qui vient compléter ma formation universitaire.</p>
                 </div>
-                <div class="modalContainerTel" class="animate__animated animate__fadeInUp ">
+                <div class="modalContainerTel" id="modalContainerTelPerso" class="animate__animated animate__fadeInUp ">
                     <div class="cardTel">
                         <div class="imgContainerTel">
                             <img src="./../public/img/project/fondTodoListReact.png" alt="Image du lancement du site" class="card__image">
@@ -712,7 +712,7 @@
                     <h1>Mes projets universitaires</h1>
                     <p>Au cours de mon parcours universitaire en informatique, j’ai eu l’occasion de mener différents projets mêlant analyse, conception et développement. Ces expériences m’ont permis de mettre en pratique mes connaissances théoriques dans des situations concrètes, que ce soit en programmation orientée objet, en développement web ou en gestion de bases de données. Chaque projet a représenté un défi technique et organisationnel, m’aidant à renforcer mes compétences en travail d’équipe, en gestion du temps et en méthodologie (agile, gestion de versions…). Ces réalisations constituent pour moi une base solide qui me permet aujourd’hui d’aborder de nouveaux projets avec rigueur et créativité.</p>
                 </div>
-                <div class="modalContainerTel">
+                <div class="modalContainerTel" id="modalContainerTelUniv">
                     <div class="cardTel">
                         <div class="imgContainerTel">
                             <img src="./../public/img/project/unniv/fondCompilFighter.png" alt="Image du lancement du jeu" class="card__image">

@@ -1,259 +1,265 @@
 @font-face {
-    font-family: 'titleCard';
-    src: url('./../public/police/CherryBombOne-Regular.ttf');
+  font-family: "titleCard";
+  src: url("./../public/police/CherryBombOne-Regular.ttf");
 }
 
 :root {
-    --background-color-element: rgba(255, 255, 255, 0.3);
-    --color-background-image-1: #A5D5DF;
-    --color-background-image-2: #597C3A;
-    --background-color-card: #B5A76E;
-    --background-color-cardTel: #F7D1D1;
-    --border-color-element: rgba(255, 255, 255, 0.2);
-    --colorText: #000000;
-    --color-btn-card: antiquewhite;
-    --color-border-btn-card: antiquewhite;
-    --i-border-color: rgba(255, 255, 255, 0.2);
+  --background-color-element: rgba(255, 255, 255, 0.3);
+  --color-background-image-1: #a5d5df;
+  --color-background-image-2: #597c3a;
+  --background-color-card: #b5a76e;
+  --background-color-cardTel: #f7d1d1;
+  --border-color-element: rgba(255, 255, 255, 0.2);
+  --colorText: #000000;
+  --color-btn-card: antiquewhite;
+  --color-border-btn-card: antiquewhite;
+  --i-border-color: rgba(255, 255, 255, 0.2);
 }
 
 body.night {
-    --background-color-element: rgba(34, 48, 79, 0.3);
-    --color-background-image-1: #1E3263;
-    --color-background-image-2: #2F3F78;
-    --background-color-card: #011122;
-    --background-color-cardTel: #011122;
-    --border-color-element: rgba(0, 53, 122, 0.2);
-    --colorText: #FFFFFF;
-    --color-btn-card: rgba(34, 48, 79, 0.3);
-    --color-border-btn-card: rgba(0, 53, 122, 0.2);
-    --i-border-color: rgba(0, 0, 0, 0.2);
+  --background-color-element: rgba(34, 48, 79, 0.3);
+  --color-background-image-1: #1e3263;
+  --color-background-image-2: #2f3f78;
+  --background-color-card: #011122;
+  --background-color-cardTel: #011122;
+  --border-color-element: rgba(0, 53, 122, 0.2);
+  --colorText: #ffffff;
+  --color-btn-card: rgba(34, 48, 79, 0.3);
+  --color-border-btn-card: rgba(0, 53, 122, 0.2);
+  --i-border-color: rgba(0, 0, 0, 0.2);
 }
 
 body.dusk {
-    --color-background-image-1: #051025;
-    --color-background-image-2: #A03B3E;
-    --background-color-card: #F7D1D1;
-    --background-color-cardTel: #F7D1D1;
-    --colorText: #000000;
-    --color-btn-card: antiquewhite;
-    --color-border-btn-card: antiquewhite;
-    --i-border-color: rgba(255, 255, 255, 0.2);
+  --color-background-image-1: #051025;
+  --color-background-image-2: #a03b3e;
+  --background-color-card: #f7d1d1;
+  --background-color-cardTel: #f7d1d1;
+  --colorText: #000000;
+  --color-btn-card: antiquewhite;
+  --color-border-btn-card: antiquewhite;
+  --i-border-color: rgba(255, 255, 255, 0.2);
 }
 
 .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-45deg, var(--color-background-image-2) 0%, var(--color-background-image-1) 100% );
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    -45deg,
+    var(--color-background-image-2) 0%,
+    var(--color-background-image-1) 100%
+  );
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card img {
-    width: 400px;
-    height: 140px;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+.card__image {
+  width: 400px;
+  height: 140px;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover {
-    transform: rotate(-2deg) scale(1.1);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transform: rotate(-2deg) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .card__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    box-sizing: border-box;
-    background-color: var(--background-color-card);
-    opacity: 0;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: var(--background-color-card);
+  opacity: 0;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .card:hover .card__content {
-    transform: translate(-50%, -50%) rotate(0deg);
-    opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg);
+  opacity: 1;
 }
 
 .card__title {
-    margin: 0;
-    font-size: 18px;
-    color: var(--colorText);
-    font-weight: 700;
+  margin: 0;
+  font-size: 18px;
+  color: var(--colorText);
+  font-weight: 700;
 }
 
 .card__description {
-    margin: 10px 0 0;
-    font-size: 12px;
-    color: var(--colorText);
-    line-height: 1.4;
-    text-align: justify;
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--colorText);
+  line-height: 1.4;
+  text-align: justify;
 }
 
-.card:hover img {
-    scale: 0;
-    transform: rotate(-45deg);
+.card:hover .card__image {
+  scale: 0;
+  transform: rotate(-45deg);
 }
 
 .btnContainer {
-    display: flex ;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .btnCard {
-    color: var(--colorText);
-    border: solid 3px var(--color-border-btn-card);
-    border-radius: 5px;
-    padding: 10px 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    font-size: 14px;
-    margin: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: var(--colorText);
+  border: solid 3px var(--color-border-btn-card);
+  border-radius: 5px;
+  padding: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .site {
-    background-color: var(--color-btn-card);
-    
+  background-color: var(--color-btn-card);
 }
 .btnCard:hover {
-    border-radius: 10px;
-    transition-duration: 1s ;
+  border-radius: 10px;
+  transition-duration: 1s;
 }
 .btnCard:active {
-    transform: scale(0.96);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15) inset;
+  transform: scale(0.96);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) inset;
 }
-.imgContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 5px;
-    
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .imgContainer div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.imgContainer i {
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid 2px var(--i-border-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+.stack {
+  margin: 5px;
+  width: 10%;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 2px var(--i-border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
-
 
 .modalContainerTel {
-    background-color: var(--background-color-element);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid 1px var(--border-color-element);
-    padding: 20px;
-    width: 100%;
+  background-color: var(--background-color-element);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: solid 1px var(--border-color-element);
+  padding: 20px;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .cardTel {
-    background-color: var(--background-color-cardTel);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid 1px var(--border-color-element);
-    padding: 20px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: var(--background-color-cardTel);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: solid 1px var(--border-color-element);
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .imgContainerTel {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: linear-gradient(-45deg, var(--color-background-image-2) 0%, var(--color-background-image-1) 100% );
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: linear-gradient(
+    -45deg,
+    var(--color-background-image-2) 0%,
+    var(--color-background-image-1) 100%
+  );
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .imgContainerTel img {
-    width: 100%;
-    height: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .imgContainerTel i {
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: solid 2px var(--i-border-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: solid 2px var(--i-border-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 .card__content_tel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 .card__title_tel {
-    font-family: 'titleCard';
-    font-size: 1.7rem;
-    padding: 10px;
+  font-family: "titleCard";
+  font-size: 1.7rem;
+  padding: 10px;
 }
 .card__description_tel {
-    font-size: 1.3rem;
-    color: var(--colorText);
-    padding: 10px;
-    margin-bottom: 20px;
-    text-align: justify;
+  font-size: 1.3rem;
+  color: var(--colorText);
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: justify;
 }
 
 .btnCardTel {
-    color: var(--colorText);
-    border: solid 3px var(--color-border-btn-card);
-    border-radius: 5px;
-    padding: 10px 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-    font-size: 1.3rem;
-    margin: 10px;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  color: var(--colorText);
+  border: solid 3px var(--color-border-btn-card);
+  border-radius: 5px;
+  padding: 10px 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  font-size: 1.3rem;
+  margin: 10px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 .btnCardTel:hover {
-    border-radius: 10px;
-    transition-duration: 1s ;
+  border-radius: 10px;
+  transition-duration: 1s;
 }
 .btnCardTel:active {
-    transform: scale(0.96);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15) inset;
+  transform: scale(0.96);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) inset;
 }
 
 .btnContainerTel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
