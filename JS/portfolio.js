@@ -60,8 +60,7 @@ const dataPortfolioPerso = [
   {
     imgProjet: "./../public/img/project/fondJeuDeDevinette.png",
     title: "Jeu de devinette de mot",
-    description:
-      "Un petit jeu de devinettes de mots codé en html, css et JS.",
+    description: "Un petit jeu de devinettes de mots codé en html, css et JS.",
     lienCode: "https://github.com/Montsy744/jeuDeDevinette",
     lienSite: "https://montsy744.github.io/jeuDeDevinette/",
     imgStack: [
@@ -88,8 +87,7 @@ const dataPortfolioPerso = [
   {
     imgProjet: "./../public/img/project/fondJeuDeTire.png",
     title: "Jeu de tir",
-    description:
-      "Un petit jeu de tir simple.",
+    description: "Un petit jeu de tir simple.",
     lienCode: "https://github.com/Montsy744/jeuDeTire",
     lienSite: "https://montsy744.github.io/jeuDeTire/",
     imgStack: [
@@ -116,8 +114,7 @@ const dataPortfolioPerso = [
   {
     imgProjet: "./../public/img/project/fondCalculatricePython.png",
     title: "Calculatrice Python",
-    description:
-      "Une calculatrice codée en Python avec Tkinter.",
+    description: "Une calculatrice codée en Python avec Tkinter.",
     lienCode: "https://github.com/Montsy744/calculator.py",
     lienSite: "https://montsy744.itch.io/calculatrice-tkinter",
     imgStack: [
@@ -172,11 +169,11 @@ const renderHtmlStack = (imgStack) => {
   let htmlTemp = "";
 
   imgStack.forEach((prop) => {
-    htmlTemp += `<img src="${prop}" alt="logo Html"  class="stack"></img>`
-  })
+    htmlTemp += `<img src="${prop}" alt="logo de la Stack"  class="stack"></img>`;
+  });
 
   return htmlTemp;
-}
+};
 
 const renderHtmlPortfolio = ({
   imgProjet,
@@ -226,5 +223,5 @@ const projetUnivTel = document.querySelector(`#modalContainerTelUniv`);
 
 dataPortfolioPerso.forEach((prop) => {
   htmlPersoOrdi += renderHtmlPortfolio(prop);
-})
+});
 projetPersoOrdi.innerHTML = htmlPersoOrdi;
