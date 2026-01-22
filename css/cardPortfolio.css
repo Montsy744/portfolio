@@ -202,14 +202,20 @@ body.dusk {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
-.imgContainerTel img {
+.imgContainerTel .imgProjet {
   width: 100%;
   height: auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
 
-.imgContainerTel i {
+.imgContainerTel div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgContainerTel div .stack {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
