@@ -10,7 +10,7 @@ const dataPortfolioPerso = [
       "./../public/img/stack/TypeScript.png",
       "./../public/img/framework/REACT.png",
       "./../public/img/framework/vite.png",
-      "./../public/img/stack/css.png",
+      "./../public/img/stack/tailwindCss.png",
       "./../public/img/stack/js.png",
       "./../public/img/stack/git.png",
     ],
@@ -24,6 +24,22 @@ const dataPortfolioPerso = [
     lienSite: "https://montsy744.github.io/EditeurMd/",
     imgStack: [
       "./../public/img/framework/REACT.png",
+      "./../public/img/stack/css.png",
+      "./../public/img/stack/js.png",
+      "./../public/img/stack/git.png",
+    ],
+  },
+  {
+    imgProjet: "./../public/img/project/fondGSAPMojito.png",
+    title: "Mojito Landing Page",
+    description:
+      "Landing page animée pour un bar à cocktails fictif, réalisée avec React et GSAP afin de découvrir les animations avancées et améliorer l’expérience utilisateur.",
+    lienCode: "https://github.com/Montsy744/GSAP_Mojito_landingPage",
+    lienSite: "https://gsap-mojito-landing-page-orpin.vercel.app/",
+    imgStack: [
+      "./../public/img/framework/REACT.png",
+      "./../public/img/framework/vite.png",
+      "./../public/img/stack/tailwindCss.png",
       "./../public/img/stack/css.png",
       "./../public/img/stack/js.png",
       "./../public/img/stack/git.png",
