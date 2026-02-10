@@ -167,19 +167,6 @@ const dataPortfolioPerso = [
       "./../public/img/stack/git.png",
     ],
   },
-  {
-    imgProjet: "./../public/img/project/fonLeanrCodeHub.png",
-    title: "LearnCodeHub",
-    description:
-      "Un site pour apprendre les langages de programmation comme HTML, CSS et autres. (non responsive)",
-    lienCode: "https://github.com/Montsy744/LearnCodeHub",
-    lienSite: "https://montsy744.github.io/LearnCodeHub/",
-    imgStack: [
-      "./../public/img/stack/html.png",
-      "./../public/img/stack/css.png",
-      "./../public/img/stack/git.png",
-    ],
-  },
 ];
 
 const dataPortfolioUniv = [
