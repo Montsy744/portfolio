@@ -294,6 +294,21 @@ const dataPortfolioUniv = [
       "./../public/img/stack/git.png",
     ],
   },
+  {
+    imgProjet: "./../public/img/project/unniv/FondJSteam.png",
+    title: "JSteam",
+    description:
+      "Création d'une copie de Steam dans le but de découvrir les langages Javascript et Typescript en suivant des TP",
+    lienCode: "https://github.com/Montsy744/JSteam",
+    lienSite: "",
+    imgStack: [
+      "./../public/img/stack/html.png",
+      "./../public/img/stack/css.png",
+      "./../public/img/stack/TypeScript.png",
+      "./../public/img/stack/js.png",
+      "./../public/img/stack/git.png",
+    ],
+  },
 ]
 
 const renderHtmlStack = (imgStack) => {
