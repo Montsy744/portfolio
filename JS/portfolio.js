@@ -183,19 +183,6 @@ const dataPortfolioPerso = [
       "./../public/img/stack/git.png",
     ],
   },
-  {
-    imgProjet: "./../public/img/project/fonLeanrCodeHub.png",
-    title: "LearnCodeHub",
-    description:
-      "Un site pour apprendre les langages de programmation comme HTML, CSS et autres. (non responsive)",
-    lienCode: "https://github.com/Montsy744/LearnCodeHub",
-    lienSite: "https://montsy744.github.io/LearnCodeHub/",
-    imgStack: [
-      "./../public/img/stack/html.png",
-      "./../public/img/stack/css.png",
-      "./../public/img/stack/git.png",
-    ],
-  },
 ];
 
 const dataPortfolioUniv = [
@@ -307,6 +294,21 @@ const dataPortfolioUniv = [
     lienSite: "",
     imgStack: [
       "./../public/img/stack/c.png",
+      "./../public/img/stack/git.png",
+    ],
+  },
+  {
+    imgProjet: "./../public/img/project/unniv/FondJSteam.png",
+    title: "JSteam",
+    description:
+      "Création d'une copie de Steam dans le but de découvrir les langages Javascript et Typescript en suivant des TP",
+    lienCode: "https://github.com/Montsy744/JSteam",
+    lienSite: "",
+    imgStack: [
+      "./../public/img/stack/html.png",
+      "./../public/img/stack/css.png",
+      "./../public/img/stack/TypeScript.png",
+      "./../public/img/stack/js.png",
       "./../public/img/stack/git.png",
     ],
   },
