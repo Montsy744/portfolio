@@ -46,6 +46,22 @@ const dataPortfolioPerso = [
     ],
   },
   {
+    imgProjet: "./../public/img/project/fondHerbergeInDHopeV2.png",
+    title: "Herberge In d'Hope refont du style",
+    description:
+      "Refonte du site que j'avais déja produit pour un restaurant notament avec un passage des technos vers React et TailwindCSS",
+    lienCode: "https://github.com/Montsy744/Herberge_In_d_Hope",
+    lienSite: "https://herberge-in-d-hope.vercel.app/",
+    imgStack: [
+      "./../public/img/framework/REACT.png",
+      "./../public/img/framework/vite.png",
+      "./../public/img/stack/tailwindCss.png",
+      "./../public/img/stack/css.png",
+      "./../public/img/stack/js.png",
+      "./../public/img/stack/git.png",
+    ],
+  },
+  {
     imgProjet: "./../public/img/project/fondHerbergeInDHope.png",
     title: "Herberge In d'Hope",
     description:
