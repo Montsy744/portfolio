@@ -312,6 +312,33 @@ const dataPortfolioUniv = [
       "./../public/img/stack/git.png",
     ],
   },
+  {
+    imgProjet: "./../public/img/project/unniv/fondJsae.png",
+    title: "Warstérïdes",
+    description:
+      "Création d'un jeu shoot'em up en utilisant TS, nodeJs et vite",
+    lienCode: "",
+    lienSite: "",
+    imgStack: [
+      "./../public/img/stack/html.png",
+      "./../public/img/stack/css.png",
+      "./../public/img/stack/TypeScript.png",
+      "./../public/img/stack/git.png",
+      "./../public/img/framework/vite.png",
+    ],
+  },
+  {
+    imgProjet: "./../public/img/project/unniv/fondApiRest.png",
+    title: "API REST",
+    description:
+      "Une API REST développer en Java avec JDBC et JEE sous un server tomcat",
+    lienCode: "https://github.com/Montsy744/SAE_REST_EcoDrop",
+    lienSite: "",
+    imgStack: [
+      "./../public/img/stack/java.png",
+      "./../public/img/stack/git.png",
+    ],
+  },
 ]
 
 const renderHtmlStack = (imgStack) => {
