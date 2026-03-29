@@ -267,12 +267,12 @@ body.dusk {
 .box-timeline {
   width: 100%;
   position: relative;
-  height: 1800px;
+  height: 1900px;
   padding: 80px 0 250px 0;
 }
 
 .ligne {
-  height: 1550px;
+  height: 1650px;
   width: 8px;
   margin: 0 auto;
   background: var(--color-ligne);
