@@ -222,3 +222,10 @@ body.dusk {
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+.visible {
+    display: block;
+}
+.hide {
+    display: none;
+}

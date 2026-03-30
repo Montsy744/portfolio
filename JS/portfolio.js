@@ -1,6 +1,11 @@
 const dataPortfolioPerso = [
   {
     imgProjet: "./../public/img/project/fondTodoListReact.png",
+    title: "Une TodoList React",
+    description:
+      "Une application de TodoList codée en TypeScript avec React et Tailwind CSS.",
+    lienCode: "https://github.com/Montsy744/A_react_todo_list",
+    lienSite: "https://a-react-todo-list.vercel.app/",
     imgStack: [
       "./../public/img/stack/TypeScript.png",
       "./../public/img/framework/REACT.png",
@@ -12,6 +17,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondMarkdownEditeur.png",
+    title: "Editeur Markdown",
+    description:
+      "Un éditeur permettant de prévisualiser son code markdown en html. Ceci est mon premier projet avec react.",
+    lienCode: "https://github.com/Montsy744/EditeurMd",
+    lienSite: "https://montsy744.github.io/EditeurMd/",
     imgStack: [
       "./../public/img/framework/REACT.png",
       "./../public/img/stack/css.png",
@@ -21,6 +31,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondGSAPMojito.png",
+    title: "Mojito Landing Page",
+    description:
+      "Landing page animée pour un bar à cocktails fictif, réalisée avec React et GSAP afin de découvrir les animations avancées et améliorer l’expérience utilisateur.",
+    lienCode: "https://github.com/Montsy744/GSAP_Mojito_landingPage",
+    lienSite: "https://gsap-mojito-landing-page-orpin.vercel.app/",
     imgStack: [
       "./../public/img/framework/REACT.png",
       "./../public/img/framework/vite.png",
@@ -32,6 +47,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondHerbergeInDHopeV2.png",
+    title: "Herberge In d'Hope refont du style",
+    description:
+      "Refonte du site que j'avais déja produit pour un restaurant notament avec un passage des technos vers React et TailwindCSS",
+    lienCode: "https://github.com/Montsy744/Herberge_In_d_Hope",
+    lienSite: "https://herberge-in-d-hope.vercel.app/",
     imgStack: [
       "./../public/img/framework/REACT.png",
       "./../public/img/framework/vite.png",
@@ -43,6 +63,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondHerbergeInDHope.png",
+    title: "Herberge In d'Hope",
+    description:
+      "Un site pour un restaurant traditionnel de la région Hauts-de-France.",
+    lienCode: "https://github.com/Montsy744/Herberge_In_d_Hope",
+    lienSite: "https://montsy744.github.io/Herberge_In_d_Hope/",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -52,6 +77,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondEdurhum.png",
+    title: "Site du bureau des étudiants",
+    description:
+      "J'ai créé ce site pour le bureau des étudiants du BUT informatique de l'Université de Lille.",
+    lienCode: "https://github.com/Montsy744/edurhum-site",
+    lienSite: "https://montsy744.github.io/edurhum-site/",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -61,6 +91,10 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondJeuDeDevinette.png",
+    title: "Jeu de devinette de mot",
+    description: "Un petit jeu de devinettes de mots codé en html, css et JS.",
+    lienCode: "https://github.com/Montsy744/jeuDeDevinette",
+    lienSite: "https://montsy744.github.io/jeuDeDevinette/",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -70,6 +104,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondToDoList.png",
+    title: "TodoList",
+    description:
+      "Un petit site qui permet de faire une todo list très simple mais efficace.",
+    lienCode: "https://github.com/Montsy744/ToDoList",
+    lienSite: "https://montsy744.github.io/ToDoList/",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -79,6 +118,10 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondJeuDeTire.png",
+    title: "Jeu de tir",
+    description: "Un petit jeu de tir simple.",
+    lienCode: "https://github.com/Montsy744/jeuDeTire",
+    lienSite: "https://montsy744.github.io/jeuDeTire/",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -88,6 +131,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fonPasswordGenerator.png",
+    title: "Générateur de mot de passe",
+    description:
+      "Un site simple pour générer un mot de passe de 12 caractères.",
+    lienCode: "https://github.com/Montsy744/genratorPassword/",
+    lienSite: "https://montsy744.github.io/genratorPassword/",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -97,6 +145,10 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondCalculatricePython.png",
+    title: "Calculatrice Python",
+    description: "Une calculatrice codée en Python avec Tkinter.",
+    lienCode: "https://github.com/Montsy744/calculator.py",
+    lienSite: "https://montsy744.itch.io/calculatrice-tkinter",
     imgStack: [
       "./../public/img/stack/python.png",
       "./../public/img/stack/git.png",
@@ -104,6 +156,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/fondParticulesThreeJ.png",
+    title: "Nuages de particules",
+    description:
+      "Un nuage de particules qui m'a servi de base pour débuter threeJS.",
+    lienCode: "https://github.com/Montsy744/particuleThreeJS",
+    lienSite: "",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -114,6 +171,11 @@ const dataPortfolioPerso = [
   },
   {
     imgProjet: "./../public/img/project/loader.png",
+    title: "Loader",
+    description:
+      "Un loader créé en css dont la vidéo du codage est disponible sur mon Instagram.",
+    lienCode: "https://github.com/Montsy744/loader",
+    lienSite: "https://montsy744.github.io/loader/",
     imgStack: [
       "./../public/img/stack/html.png",
       "./../public/img/stack/css.png",
@@ -230,10 +292,7 @@ const dataPortfolioUniv = [
       "Implémentation d’un mini-shell en langage C proposant une invite interactive et l’exécution de commandes externes. Il sert d’exercice pratique pour comprendre les forks",
     lienCode: "https://github.com/Montsy744/MyPersonalShell",
     lienSite: "",
-    imgStack: [
-      "./../public/img/stack/c.png",
-      "./../public/img/stack/git.png",
-    ],
+    imgStack: ["./../public/img/stack/c.png", "./../public/img/stack/git.png"],
   },
   {
     imgProjet: "./../public/img/project/unniv/FondJSteam.png",
@@ -277,7 +336,7 @@ const dataPortfolioUniv = [
       "./../public/img/stack/git.png",
     ],
   },
-]
+];
 
 const renderHtmlStack = (imgStack) => {
   let htmlTemp = "";
@@ -297,7 +356,7 @@ const liensProjetFunc = (lienCode, lienSite) => {
       <a href="" class="btnCard code" id="video">Voir la vidéo</a>
     `;
   } else if (lienSite === ``) {
-      liensProjet += `
+    liensProjet += `
         <a href="${lienCode}" target="_blank" class="btnCard code">Voir le code</a>
     `;
   } else {
@@ -310,16 +369,7 @@ const liensProjetFunc = (lienCode, lienSite) => {
   return liensProjet;
 };
 
-const renderHtmlPortfolio = ({
-  imgProjet,
-  title,
-  description,
-  lienCode,
-  lienSite,
-  imgStack,
-}) => {
-  const liensProjetPersoOrdi = liensProjetFunc(lienCode, lienSite);
-
+const renderHtmlPortfolio = ({ imgProjet, imgStack }) => {
   return `<div class="card">
             <div class="imgContainer">
                 <img src="${imgProjet}" alt="Image du lancement du site" class="card__image imgProjet">
@@ -380,7 +430,55 @@ projetPersoTel.innerHTML = htmlPersoTel;
 dataPortfolioUniv.forEach((prop) => {
   htmlUnivOrdi += renderHtmlPortfolio(prop);
   htmlUnivTel += renderHtmlPortfolioTel(prop);
-})
+});
 projetUnivOrdi.innerHTML = htmlUnivOrdi;
 projetUnivTel.innerHTML = htmlUnivTel;
 
+projetPersoOrdi.querySelectorAll(".card").forEach((card, index) => {
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#mainHeader").classList.add("hide");
+    document.querySelector("#containerPortfolio").classList.add("hide");
+    document.querySelector("#descriptionProject").classList.remove("hide");
+    document.querySelector("#descriptionProject").classList.add("visible");
+    renderHtmlDescriptionView(dataPortfolioPerso[index]);
+  });
+});
+
+projetUnivOrdi.querySelectorAll(".card").forEach((card, index) => {
+  card.addEventListener("click", (e) => {
+    e.preventDefault();
+    document.querySelector("#mainHeader").classList.add("hide");
+    document.querySelector("#containerPortfolio").classList.add("hide");
+    document.querySelector("#descriptionProject").classList.add("visible");
+    renderHtmlDescriptionView(dataPortfolioUniv[index]);
+  });
+});
+
+const renderHtmlDescriptionView = ({
+  imgProjet,
+  title,
+  description,
+  lienCode,
+  lienSite,
+  imgStack,
+}) => {
+  let liensProjet = liensProjetFunc(lienCode, lienSite);
+
+  document.querySelector("#descriptionTitle").innerHTML = `<h1>${title}</h1>`;
+  document.querySelector("#imgDescription").innerHTML =
+    `<img src="${imgProjet}" alt="Image du projet" />`;
+  document.querySelector("#stackDescription").innerHTML =
+    renderHtmlStack(imgStack);
+  document.querySelector("#contentDescription").innerHTML =
+    `<p>${description}</p>`;
+  document.querySelector("#btnDescription").innerHTML = liensProjet;
+};
+
+document.querySelector("#goBackToPortfolio").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.querySelector("#mainHeader").classList.remove("hide");
+  document.querySelector("#containerPortfolio").classList.remove("hide");
+  document.querySelector("#descriptionProject").classList.remove("visible");
+  document.querySelector("#descriptionProject").classList.add("hide");
+});
