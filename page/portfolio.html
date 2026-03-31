@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./../css/styleportfolio.css" />
     <link rel="stylesheet" type="text/css" href="./../css/cardPortfolio.css" />
     <link rel="stylesheet" type="text/css" href="./../css/loaderCss.css" />
+    <link rel="stylesheet" type="text/css" href="./../css/describe.css">
 
     <link rel="stylesheet" type="text/css" href="./../css/media/generalMedia.css" />
     <link rel="stylesheet" type="text/css" href="./../css/media/portfolioMedia.css" />
@@ -19,11 +20,12 @@
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-brands/css/uicons-brands.css'>
 
     <script src="https://kit.fontawesome.com/d84e16f660.js" crossorigin="anonymous"></script>
-    <script src="./../JS/portfolio.js" defer></script>
+    <script type="module" src="./../JS/portfolio.js" defer></script>
     <script src="./../JS/btnNuitJour.js" defer></script>
     <script src="./../JS/portfolioBtn.js" defer></script>
     <script src="./../JS/video.js" defer></script>
     <script src="./../JS/loader.js" defer></script>
+    <script  src="./../JS/portfolioProjet.js" defer></script>
 </head>
 <body>
     <div id="loader">
@@ -64,7 +66,7 @@
         </div>
     </header>
     <main>
-        <div id="mainHeader" class="animate__animated animate__fadeInDown">
+        <div id="mainHeader" class="animate__animated animate__fadeInDown bgElement" >
             <h1>Mon Portfolio</h1>
             <p>Bienvenue sur mon portfolio ! Découvrez mes projets, compétences et réalisations en développement web.</p>
             <div id="choix">
@@ -76,10 +78,10 @@
                 </div>
             </div>
         </div>
-        <div id="containerPortfolio">
+        <div id="containerPortfolio" class="bgElement">
 
             <div id="modal1"  class="modal">
-                <div class="expliPerso animate__animated animate__fadeInDown">
+                <div class="expliPerso bgElement animate__animated animate__fadeInDown">
                     <h1>Mes projets personnels</h1>
                     <p>En parallèle de mes études, je développe régulièrement des projets personnels afin d’explorer de nouvelles technologies et d’approfondir mes compétences. Ces réalisations me permettent de tester des idées, de me former à des outils récents et de concrétiser ma curiosité pour le développement informatique. Qu’il s’agisse d’applications web, de petits jeux ou d’outils expérimentaux, chaque projet constitue pour moi un terrain d’apprentissage et d’innovation qui vient compléter ma formation universitaire.</p>
                 </div>
@@ -87,7 +89,7 @@
             </div>
             
             <div id="modal2" class=" modal">
-                <div class="expliPerso animate__animated animate__fadeInDown">
+                <div class="expliPerso bgElement animate__animated animate__fadeInDown">
                     <h1>Mes projets universitaires</h1>
                     <p>Au cours de mon parcours universitaire en informatique, j’ai eu l’occasion de mener différents projets mêlant analyse, conception et développement. Ces expériences m’ont permis de mettre en pratique mes connaissances théoriques dans des situations concrètes, que ce soit en programmation orientée objet, en développement web ou en gestion de bases de données. Chaque projet a représenté un défi technique et organisationnel, m’aidant à renforcer mes compétences en travail d’équipe, en gestion du temps et en méthodologie (agile, gestion de versions…). Ces réalisations constituent pour moi une base solide qui me permet aujourd’hui d’aborder de nouveaux projets avec rigueur et créativité.</p>
                 </div>
@@ -95,7 +97,7 @@
             </div>
             <div id="modal3" class="modal">
 
-                <div class="expliPersoTel animate__animated animate__fadeInDown">
+                <div class="expliPersoTel bgElement animate__animated animate__fadeInDown">
                     <h1>Mes projets personnels</h1>
                     <p>En parallèle de mes études, je développe régulièrement des projets personnels afin d’explorer de nouvelles technologies et d’approfondir mes compétences. Ces réalisations me permettent de tester des idées, de me former à des outils récents et de concrétiser ma curiosité pour le développement informatique. Qu’il s’agisse d’applications web, de petits jeux ou d’outils expérimentaux, chaque projet constitue pour moi un terrain d’apprentissage et d’innovation qui vient compléter ma formation universitaire.</p>
                 </div>
@@ -103,7 +105,7 @@
             </div>
 
             <div id="modal4" class="animate__animated animate__fadeInUp modal">
-                <div class="expliPersoTel animate__animated animate__fadeInDown">
+                <div class="expliPersoTel bgElement animate__animated animate__fadeInDown">
                     <h1>Mes projets universitaires</h1>
                     <p>Au cours de mon parcours universitaire en informatique, j’ai eu l’occasion de mener différents projets mêlant analyse, conception et développement. Ces expériences m’ont permis de mettre en pratique mes connaissances théoriques dans des situations concrètes, que ce soit en programmation orientée objet, en développement web ou en gestion de bases de données. Chaque projet a représenté un défi technique et organisationnel, m’aidant à renforcer mes compétences en travail d’équipe, en gestion du temps et en méthodologie (agile, gestion de versions…). Ces réalisations constituent pour moi une base solide qui me permet aujourd’hui d’aborder de nouveaux projets avec rigueur et créativité.</p>
                 </div>
@@ -127,6 +129,19 @@
                     <p id="closeModalBtn">retour au portfolio</p>
                 </div>
                 
+            </div>
+        </div>
+
+        <div id="descriptionProject" class="animate__animated animate__fadeInUp hide">
+            <div id="descriptionTitle"></div>
+            <div id="imgStackDescription">
+                <div id="imgDescription"></div>
+                <div id="stackDescription" class="bgElement"></div>
+            </div>
+            <div id="contentDescription" class="bgElement"></div>
+            <div id="btnDescription" class="bgElement"></div>
+            <div id="goBackToPortfolioDiv">
+                <a id="goBackToPortfolio"><i class="fa-solid fa-angles-left"></i></a>
             </div>
         </div>
     </main>

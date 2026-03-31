@@ -49,6 +49,7 @@ body.dusk {
     var(--color-background-image-2) 0%,
     var(--color-background-image-1) 100%
   );
+  cursor: pointer;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -63,79 +64,6 @@ body.dusk {
   transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.card:hover {
-  transform: rotate(-2deg) scale(1.1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.card__content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-45deg);
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  box-sizing: border-box;
-  background-color: var(--background-color-card);
-  opacity: 0;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.card:hover .card__content {
-  transform: translate(-50%, -50%) rotate(0deg);
-  opacity: 1;
-}
-
-.card__title {
-  margin: 0;
-  font-size: 18px;
-  color: var(--colorText);
-  font-weight: 700;
-}
-
-.card__description {
-  margin: 10px 0 0;
-  font-size: 12px;
-  color: var(--colorText);
-  line-height: 1.4;
-  text-align: justify;
-}
-
-.card:hover .card__image {
-  scale: 0;
-  transform: rotate(-45deg);
-}
-
-.btnContainer {
-  display: flex;
-  flex-direction: row;
-}
-
-.btnCard {
-  color: var(--colorText);
-  border: solid 3px var(--color-border-btn-card);
-  border-radius: 5px;
-  padding: 10px 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  font-size: 14px;
-  margin: 10px;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.site {
-  background-color: var(--color-btn-card);
-}
-.btnCard:hover {
-  border-radius: 10px;
-  transition-duration: 1s;
-}
-.btnCard:active {
-  transform: scale(0.96);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) inset;
-}
 .imgContainer {
   display: flex;
   flex-direction: column;
@@ -159,6 +87,20 @@ body.dusk {
   border: solid 2px var(--i-border-color);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .modalContainerTel {
   background-color: var(--background-color-element);
