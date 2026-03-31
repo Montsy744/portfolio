@@ -647,6 +647,7 @@ export const dataPortfolioUniv = [
       "./../public/img/stack/TypeScript.png",
       "./../public/img/stack/git.png",
       "./../public/img/framework/vite.png",
+      "./../public/img/stack/nodeJS.png"
     ],
   },
 
