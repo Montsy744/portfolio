@@ -225,3 +225,10 @@ body.night #containerFooter {
 .tel {
     display: none;
 }
+
+.bgElement {
+  background-color: var(--background-color-element);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: solid 1px var(--border-color-element);
+}

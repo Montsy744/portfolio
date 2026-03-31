@@ -1,69 +1,4 @@
 :root {
-    --html: #e86026;
-    --css: #0f6cac;
-    --Js: #f4dd1b;
-    --git: #ed4b26;
-    --java: #5382a1;
-    --sql: #FE0809;
-    --md: #6CA3F7;
-    --react: #18CDDC;
-    --linux: #0B0B0B;
-    --C: #6295CD;
-    --Vue: #3EB27E;
-}
-
-.colorHtml {
-    color: var(--html);
-}
-
-.colorCss {
-    color: var(--css);
-}
-
-.colorJs {
-    color: var(--Js);
-}
-
-.colorJava {
-    color: var(--java);
-}
-
-.colorSql {
-    color: var(--sql)
-}
-
-.colorGit {
-    color: var(--git);
-}
-
-.colorMd {
-    color: var(--md);
-}
-
-.colorReact {
-    color: var(--react);
-}
-
-.colorLinux {
-    color: var(--linux);
-}
-
-.colorPython {
-    background: linear-gradient(135deg, #306998 50%, #FFD43B 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-}
-
-.colorC {
-    color : var(--C);
-}
-.colorVue {
-    color : var(--Vue)
-}
-
-:root {
     --background-color-element: rgba(255, 255, 255, 0.3);
     --border-color-element: rgba(255, 255, 255, 0.2);
     --colorText: #000000;
@@ -83,15 +18,10 @@ body.dusk {
 
 #mainHeader {
     margin: 20px 0px;
-    ;
     text-align: center;
     font-size: 1.3rem;
     width: 70%;
     padding: 20px;
-    background-color: var(--background-color-element);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid 1px var(--border-color-element);
     color: var(--colorText);
 }
 
@@ -108,10 +38,6 @@ body.dusk {
     text-align: justify;
     font-size: 1.3rem;
     padding: 40px;
-    background-color: var(--background-color-element);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid 1px var(--border-color-element);
     color: var(--colorText);
 }
 
@@ -125,10 +51,6 @@ body.dusk {
 
 
 #modalContainer {
-    background-color: var(--background-color-element);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: solid 1px var(--border-color-element);
     padding: 20px;
 
     display: grid;
