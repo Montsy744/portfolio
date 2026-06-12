@@ -5,10 +5,10 @@ const Header = () => {
         <header>
             <div className="wrap">
                 <nav>
-                    <a href="index.html" className="logo">
-                    <span className="logo-mark">HS</span>
-                    Hugo Straseele
-                    </a>
+                    <NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""} style={{display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <span className="logo-mark" style={{margin: "10px"}}>HS</span>
+                        Hugo Straseele
+                    </NavLink>
                     <div className="nav-links">
                         <NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>
                             <span className="idx">00</span> Accueil

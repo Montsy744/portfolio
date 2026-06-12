@@ -1,0 +1,36 @@
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-child {
+    text-align: left;
+}
+
+.hero-section-child h1 {
+    font-size: 2.5rem;
+}
+
+.role-line {
+  font-size: 19px;
+  color: var(--text-dim);
+  margin-bottom: 28px;
+  min-height: 28px;
+}
+
+.role-line .cursor {
+  display: inline-block;
+  width: 9px;
+  height: 19px;
+  background: var(--accent);
+  margin-left: 4px;
+  vertical-align: -3px;
+  animation: blink 1s steps(1) infinite;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
