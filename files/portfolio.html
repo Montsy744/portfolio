@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio — Hugo Straseele</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="index.html" class="logo">
+          <span class="logo-mark">HS</span>
+          Hugo Straseele
+        </a>
+        <div class="nav-links">
+          <a href="index.html"><span class="idx">00</span> Accueil</a>
+          <a href="about.html"><span class="idx">01</span> À propos</a>
+          <a href="competences.html"><span class="idx">02</span> Compétences</a>
+          <a href="portfolio.html" class="active"><span class="idx">03</span> Portfolio</a>
+          <a href="defis.html"><span class="idx">04</span> Défis</a>
+        </div>
+        <a href="mailto:hugostraseele.ohmycode@gmail.com" class="nav-cta">Contact</a>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header wrap">
+      <div class="eyebrow mono">MODULE 03 // RÉALISATIONS</div>
+      <h1 class="display">Portfolio</h1>
+      <p class="lead">
+        Une sélection de projets personnels et universitaires, du prototype au déploiement Docker.
+      </p>
+      <div class="page-jump mono">
+        <a href="#perso">→ Projets personnels</a>
+        <a href="#univ">→ Projets universitaires</a>
+      </div>
+    </section>
+
+    <section class="section wrap" id="perso">
+      <div class="section-head">
+        <div>
+          <span class="idx mono">01 // PERSO</span>
+          <h2 class="display">Projets personnels</h2>
+        </div>
+        <p>
+          En parallèle de mes études, je développe régulièrement des projets pour explorer de nouvelles
+          technologies et concrétiser ma curiosité.
+        </p>
+      </div>
+
+      <div class="project-list">
+        <div class="project-row">
+          <span class="pidx mono">01</span>
+          <div>
+            <h3>Weather-Sport</h3>
+            <p>
+              Application qui répertorie des licences sportives et permet de les filtrer selon les conditions
+              météo — par exemple, lister les sports praticables sous la pluie.
+            </p>
+            <div class="tag-grid">
+              <span class="tag">Vue.js</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Docker</span>
+            </div>
+          </div>
+          <div class="links">
+            <span class="status-pill done mono">TERMINÉ</span>
+            <a href="https://github.com/Montsy744/WeatherApp" target="_blank" rel="noopener">Code source ↗</a>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <span class="pidx mono">02</span>
+          <div>
+            <h3>LaBonneListe</h3>
+            <p>
+              Application full-stack de gestion de tâches, avec Docker Compose, healthchecks et migrations
+              de base de données.
+            </p>
+            <div class="tag-grid">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Liquibase</span>
+            </div>
+          </div>
+          <div class="links">
+            <span class="status-pill progress mono">EN COURS</span>
+            <a href="https://github.com/Montsy744" target="_blank" rel="noopener">Code source ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft wrap" id="univ">
+      <div class="section-head">
+        <div>
+          <span class="idx mono">02 // ACADEMY</span>
+          <h2 class="display">Projets universitaires</h2>
+        </div>
+        <p>
+          Des projets menés en BUT Informatique et lors de ma formation Nextoo Academy, mêlant analyse,
+          conception et développement.
+        </p>
+      </div>
+
+      <div class="project-list">
+        <div class="project-row">
+          <span class="pidx mono">03</span>
+          <div>
+            <h3>Cineflux</h3>
+            <p>
+              Recommandateur de films basé sur les préférences de l'utilisateur (genres, acteurs...), via
+              l'API TheMovieDB. Réalisé en exercice de validation des acquis.
+            </p>
+            <div class="tag-grid">
+              <span class="tag">Vue.js</span>
+              <span class="tag">Spring Boot</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">TMDB API</span>
+            </div>
+          </div>
+          <div class="links">
+            <span class="status-pill done mono">TERMINÉ</span>
+            <a href="https://github.com/Montsy744/Cineflux" target="_blank" rel="noopener">Code source ↗</a>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <span class="pidx mono">04</span>
+          <div>
+            <h3>Jeu de labyrinthe — Java / JavaFX</h3>
+            <p>
+              Jeu de labyrinthe structuré en architecture MVC, développé en Java avec JavaFX dans le cadre
+              du BUT 2ᵉ année.
+            </p>
+            <div class="tag-grid">
+              <span class="tag">Java</span>
+              <span class="tag">JavaFX</span>
+              <span class="tag">MVC</span>
+            </div>
+          </div>
+          <div class="links">
+            <span class="status-pill done mono">TERMINÉ</span>
+            <a href="https://github.com/Montsy744" target="_blank" rel="noopener">Code source ↗</a>
+          </div>
+        </div>
+
+        <div class="project-row">
+          <span class="pidx mono">05</span>
+          <div>
+            <h3>Shoot'em up — TypeScript</h3>
+            <p>
+              Jeu de tir développé en TypeScript, dans le cadre des projets du BUT 2ᵉ année.
+            </p>
+            <div class="tag-grid">
+              <span class="tag">TypeScript</span>
+              <span class="tag">HTML Canvas</span>
+            </div>
+          </div>
+          <div class="links">
+            <span class="status-pill done mono">TERMINÉ</span>
+            <a href="https://github.com/Montsy744" target="_blank" rel="noopener">Code source ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span class="left mono">© 2026 Hugo Straseele — Tous droits réservés</span>
+      <div class="links">
+        <a href="https://github.com/Montsy744" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hugo-straseele-187569337/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/straseele_hugo/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

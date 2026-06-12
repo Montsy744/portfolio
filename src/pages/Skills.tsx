@@ -1,0 +1,13 @@
+import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
+
+const Skills = () => {
+    return (
+        <>
+            <Header />
+            <Footer />
+        </>
+    )
+}
+
+export default Skills;

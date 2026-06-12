@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hugo Straseele — Développeur web full-stack</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+
+  :root {
+    --bg: #0A0C12;
+    --bg-soft: #0D1117;
+    --panel: #11161F;
+    --border: #222B38;
+    --border-soft: #1A212B;
+    --text: #E7ECF2;
+    --text-dim: #7C8898;
+    --text-faint: #4A5462;
+    --accent: #5EEAD4;
+    --accent-soft: rgba(94, 234, 212, 0.12);
+    --warn: #FF8A65;
+    --radius: 6px;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 56px 56px;
+    background-position: center top;
+  }
+
+  a { color: inherit; text-decoration: none; }
+
+  .display {
+    font-family: 'Space Grotesk', sans-serif;
+    letter-spacing: -0.01em;
+  }
+
+  .mono {
+    font-family: 'JetBrains Mono', monospace;
+    letter-spacing: 0.02em;
+  }
+
+  .wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 32px;
+  }
+
+  /* ---------- NAV ---------- */
+
+  header {
+    border-bottom: 1px solid var(--border-soft);
+    background: rgba(10, 12, 18, 0.7);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  .logo-mark {
+    width: 34px;
+    height: 34px;
+    border: 1px solid var(--accent);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+    color: var(--text-dim);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.15s ease;
+  }
+
+  .nav-links a:hover { color: var(--text); }
+
+  .nav-links a .idx {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--accent);
+  }
+
+  .nav-cta {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 9px 18px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--text);
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+
+  .nav-cta:hover {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 8px;
+  }
+
+  .nav-toggle span {
+    width: 20px;
+    height: 1px;
+    background: var(--text);
+    display: block;
+  }
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    padding: 96px 0 80px;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 64px;
+    align-items: start;
+  }
+
+  .eyebrow {
+    font-size: 13px;
+    color: var(--accent);
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .eyebrow::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 0 4px var(--accent-soft);
+  }
+
+  h1 {
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.05;
+    margin-bottom: 20px;
+  }
+
+  .role-line {
+    font-size: 19px;
+    color: var(--text-dim);
+    margin-bottom: 28px;
+    min-height: 28px;
+  }
+
+  .role-line .cursor {
+    display: inline-block;
+    width: 9px;
+    height: 19px;
+    background: var(--accent);
+    margin-left: 4px;
+    vertical-align: -3px;
+    animation: blink 1s steps(1) infinite;
+  }
+
+  @keyframes blink { 50% { opacity: 0; } }
+
+  .hero p.lead {
+    font-size: 16px;
+    color: var(--text-dim);
+    max-width: 480px;
+    margin-bottom: 36px;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    border-radius: var(--radius);
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.15s ease;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: #06201C;
+  }
+
+  .btn-primary:hover {
+    background: #82f2dd;
+  }
+
+  .btn-secondary {
+    border: 1px solid var(--border);
+    color: var(--text);
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--text-dim);
+    background: var(--panel);
+  }
+
+  /* ---------- HUD PANEL ---------- */
+
+  .hud {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hud::before,
+  .hud::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--accent);
+    opacity: 0.6;
+  }
+
+  .hud::before {
+    top: -1px; left: -1px;
+    border-right: none; border-bottom: none;
+  }
+
+  .hud::after {
+    bottom: -1px; right: -1px;
+    border-left: none; border-top: none;
+  }
+
+  .hud-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    color: var(--text-faint);
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-soft);
+  }
+
+  .hud-header .status {
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .hud-header .status::before {
+    content: '';
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.3; }
+  }
+
+  .hud-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 11px 0;
+    border-bottom: 1px solid var(--border-soft);
+    font-size: 13px;
+  }
+
+  .hud-row:last-of-type { border-bottom: none; }
+
+  .hud-row .label {
+    color: var(--text-faint);
+    font-size: 11px;
+  }
+
+  .hud-row .value {
+    text-align: right;
+  }
+
+  .hud-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+    max-width: 220px;
+  }
+
+  .tag {
+    font-size: 11px;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    color: var(--text-dim);
+  }
+
+  .hud-footer {
+    margin-top: 20px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border-soft);
+    font-size: 11px;
+    color: var(--text-faint);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ---------- MARQUEE ---------- */
+
+  .marquee-wrap {
+    border-top: 1px solid var(--border-soft);
+    border-bottom: 1px solid var(--border-soft);
+    overflow: hidden;
+    padding: 22px 0;
+    background: var(--bg-soft);
+  }
+
+  .marquee {
+    display: flex;
+    gap: 56px;
+    white-space: nowrap;
+    animation: scroll 32s linear infinite;
+    font-size: 13px;
+    color: var(--text-faint);
+  }
+
+  .marquee span { display: flex; align-items: center; gap: 56px; }
+
+  .marquee b { color: var(--text-dim); font-weight: 500; }
+
+  @keyframes scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ---------- QUICK NAV SECTION ---------- */
+
+  .section {
+    padding: 96px 0;
+  }
+
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 48px;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+
+  .section-head .idx {
+    font-size: 12px;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  .section-head h2 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .section-head p {
+    color: var(--text-dim);
+    font-size: 14px;
+    max-width: 320px;
+  }
+
+  .grid-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border-soft);
+    border: 1px solid var(--border-soft);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .card {
+    background: var(--bg);
+    padding: 32px 24px;
+    transition: background 0.2s ease;
+    position: relative;
+  }
+
+  .card:hover {
+    background: var(--panel);
+  }
+
+  .card .idx {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--accent);
+    display: block;
+    margin-bottom: 28px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-bottom: 24px;
+  }
+
+  .card .go {
+    font-size: 12px;
+    color: var(--text-faint);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.15s ease, gap 0.15s ease;
+  }
+
+  .card:hover .go {
+    color: var(--accent);
+    gap: 12px;
+  }
+
+  /* ---------- FOOTER ---------- */
+
+  footer {
+    border-top: 1px solid var(--border-soft);
+    padding: 40px 0;
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .footer-row .left {
+    font-size: 12px;
+    color: var(--text-faint);
+  }
+
+  .footer-row .links {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-row .links a {
+    font-size: 12px;
+    color: var(--text-dim);
+    transition: color 0.15s ease;
+  }
+
+  .footer-row .links a:hover { color: var(--accent); }
+
+  /* ---------- RESPONSIVE ---------- */
+
+  @media (max-width: 880px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    .hero { grid-template-columns: 1fr; gap: 48px; }
+    h1 { font-size: 44px; }
+    .grid-cards { grid-template-columns: 1fr 1fr; }
+    .hud-tags { max-width: none; }
+  }
+
+  @media (max-width: 540px) {
+    .wrap { padding: 0 20px; }
+    h1 { font-size: 36px; }
+    .grid-cards { grid-template-columns: 1fr; }
+    .section { padding: 64px 0; }
+    .hero { padding: 56px 0; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee { animation: none; }
+    .role-line .cursor { animation: none; }
+    .hud-header .status::before { animation: none; }
+  }
+
+</style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <nav>
+        <a href="#" class="logo">
+          <span class="logo-mark">HS</span>
+          Hugo Straseele
+        </a>
+        <div class="nav-links">
+          <a href="#"><span class="idx">00</span> Accueil</a>
+          <a href="#"><span class="idx">01</span> À propos</a>
+          <a href="#"><span class="idx">02</span> Compétences</a>
+          <a href="#"><span class="idx">03</span> Portfolio</a>
+          <a href="#"><span class="idx">04</span> Défis</a>
+        </div>
+        <a href="#" class="nav-cta">Contact</a>
+        <button class="nav-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <div class="eyebrow mono">SYSTEM // PORTFOLIO V2</div>
+        <h1 class="display">Hugo Straseele</h1>
+        <div class="role-line mono">
+          <span id="role-text">&gt; Développeur web full-stack</span><span class="cursor"></span>
+        </div>
+        <p class="lead">
+          Étudiant en BUT Informatique, spécialisé front-end avec une vraie appétence pour l'architecture full-stack.
+          Je conçois des interfaces précises, rapides, et pensées jusqu'au dernier pixel.
+        </p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-primary">Voir mes projets →</a>
+          <a href="#" class="btn btn-secondary">Télécharger le CV</a>
+        </div>
+      </div>
+
+      <div class="hud">
+        <div class="hud-header mono">
+          <span>STATUT_SYSTÈME</span>
+          <span class="status">DISPONIBLE</span>
+        </div>
+        <div class="hud-row">
+          <span class="label mono">LOCALISATION</span>
+          <span class="value">Lille, France</span>
+        </div>
+        <div class="hud-row">
+          <span class="label mono">FORMATION</span>
+          <span class="value">BUT Informatique — 3ᵉ année</span>
+        </div>
+        <div class="hud-row">
+          <span class="label mono">RECHERCHE</span>
+          <span class="value">Alternance / stage full-stack</span>
+        </div>
+        <div class="hud-row">
+          <span class="label mono">STACK</span>
+          <div class="hud-tags">
+            <span class="tag">Java</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Vue.js</span>
+            <span class="tag">React</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Docker</span>
+          </div>
+        </div>
+        <div class="hud-footer mono">
+          <span>BUILD 2026.06</span>
+          <span>LILLE_FR</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee-wrap">
+      <div class="wrap">
+        <div class="marquee mono">
+          <span>
+            <b>Java</b> · <b>Spring Boot</b> · <b>Vue.js</b> · <b>React</b> · <b>PostgreSQL</b> · <b>Docker</b> · <b>TypeScript</b> · <b>GitLab CI</b> · <b>SonarQube</b>
+          </span>
+          <span>
+            <b>Java</b> · <b>Spring Boot</b> · <b>Vue.js</b> · <b>React</b> · <b>PostgreSQL</b> · <b>Docker</b> · <b>TypeScript</b> · <b>GitLab CI</b> · <b>SonarQube</b>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <section class="section wrap">
+      <div class="section-head">
+        <div>
+          <span class="idx mono">NAVIGATION</span>
+          <h2 class="display">Explorer le système</h2>
+        </div>
+        <p>Quatre modules pour découvrir mon parcours, mes compétences et mes réalisations.</p>
+      </div>
+
+      <div class="grid-cards">
+        <a href="#" class="card">
+          <span class="idx">01</span>
+          <h3>À propos</h3>
+          <p>Mon parcours, ma formation et ce qui m'anime au quotidien.</p>
+          <span class="go">Découvrir →</span>
+        </a>
+        <a href="#" class="card">
+          <span class="idx">02</span>
+          <h3>Compétences</h3>
+          <p>Les langages, frameworks et outils que j'utilise et maîtrise.</p>
+          <span class="go">Découvrir →</span>
+        </a>
+        <a href="#" class="card">
+          <span class="idx">03</span>
+          <h3>Portfolio</h3>
+          <p>Une sélection de projets full-stack réalisés en formation et en stage.</p>
+          <span class="go">Découvrir →</span>
+        </a>
+        <a href="#" class="card">
+          <span class="idx">04</span>
+          <h3>Défis</h3>
+          <p>Exercices techniques relevés pour progresser et sortir de ma zone de confort.</p>
+          <span class="go">Découvrir →</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span class="left mono">© 2026 Hugo Straseele — Tous droits réservés</span>
+      <div class="links">
+        <a href="https://github.com/Montsy744" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/hugo-straseele-187569337/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://www.instagram.com/straseele_hugo/" target="_blank" rel="noopener">Instagram</a>
+        <a href="#">Mentions légales</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const roles = [
+      '> Développeur web full-stack',
+      '> Spécialiste Vue.js & React',
+      '> Spring Boot & PostgreSQL',
+      '> Toujours prêt pour un nouveau défi'
+    ];
+    let i = 0;
+    const el = document.getElementById('role-text');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setInterval(() => {
+        i = (i + 1) % roles.length;
+        el.style.opacity = 0;
+        setTimeout(() => {
+          el.textContent = roles[i];
+          el.style.opacity = 1;
+        }, 200);
+      }, 3200);
+      el.style.transition = 'opacity 0.2s ease';
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+import Footer from "../components/common/Footer";
+import Header from "../components/common/Header";
+
+const Home = () => {
+
+
+    return (
+        <>
+            <Header />
+            <Footer />
+        </>
+    )
+}
+
+export default Home;
