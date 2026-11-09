@@ -1,5 +1,67 @@
 export const dataPortfolioPerso = [
   {
+    imgProjet: "./../public/img/project/fondHerbergeInDHopeV2.png",
+    title: "Herberge In d'Hope (Refonte)",
+
+    description:
+      "Ce projet personnel consiste en la refonte d’un site de restaurant que j’avais précédemment réalisé. L’objectif était de moderniser l’interface et de migrer vers des technologies récentes comme React et Tailwind CSS. J’ai entièrement repris le développement en améliorant la structure et le design. Le résultat est un site plus moderne et agréable à utiliser.",
+
+    analyse: {
+      apprentissage:
+        "Refactorisation d’un projet existant et migration vers React.",
+      difficultes:
+        "Repenser l’architecture du projet.",
+      solutions:
+        "Découpage en composants.",
+      competences: ["React", "Refactoring", "UI"],
+      ameliorations:
+        "Ajouter des fonctionnalités dynamiques (réservations).",
+    },
+
+    lienCode: "https://github.com/Montsy744/Herberge_In_d_Hope",
+    lienSite: "https://herberge-in-d-hope.vercel.app/",
+
+    imgStack: [
+      "./../public/img/framework/REACT.png",
+      "./../public/img/framework/vite.png",
+      "./../public/img/stack/tailwindCss.png",
+      "./../public/img/stack/css.png",
+      "./../public/img/stack/js.png",
+      "./../public/img/stack/git.png",
+    ],
+  },
+  {
+    imgProjet: "./../public/img/project/fondGSAPMojito.png",
+    title: "Mojito Landing Page",
+
+    description:
+      "Ce projet personnel consiste en la création d’une landing page animée pour un bar à cocktails fictif. Réalisé individuellement avec React et GSAP, il avait pour objectif de découvrir les animations avancées et d’améliorer l’expérience utilisateur. J’ai conçu l’interface et intégré des animations fluides et dynamiques. Le résultat est une page interactive et moderne.",
+
+    analyse: {
+      apprentissage:
+        "Utilisation de GSAP pour créer des animations avancées.",
+      difficultes:
+        "Synchronisation et performance des animations.",
+      solutions:
+        "Tests et ajustements progressifs.",
+      competences: ["React", "GSAP", "UX/UI", "Animation"],
+      ameliorations:
+        "Ajouter des interactions plus avancées.",
+    },
+
+    lienCode: "https://github.com/Montsy744/GSAP_Mojito_landingPage",
+    lienSite: "https://gsap-mojito-landing-page-orpin.vercel.app/",
+
+    imgStack: [
+      "./../public/img/framework/REACT.png",
+      "./../public/img/framework/vite.png",
+      "./../public/img/stack/tailwindCss.png",
+      "./../public/img/stack/css.png",
+      "./../public/img/stack/js.png",
+      "./../public/img/stack/git.png",
+    ],
+  },
+  {
     imgProjet: "./../public/img/project/fondTodoListReact.png",
     title: "Une TodoList React",
 
@@ -60,71 +122,6 @@ export const dataPortfolioPerso = [
       "./../public/img/stack/git.png",
     ],
   },
-
-  {
-    imgProjet: "./../public/img/project/fondGSAPMojito.png",
-    title: "Mojito Landing Page",
-
-    description:
-      "Ce projet personnel consiste en la création d’une landing page animée pour un bar à cocktails fictif. Réalisé individuellement avec React et GSAP, il avait pour objectif de découvrir les animations avancées et d’améliorer l’expérience utilisateur. J’ai conçu l’interface et intégré des animations fluides et dynamiques. Le résultat est une page interactive et moderne.",
-
-    analyse: {
-      apprentissage:
-        "Utilisation de GSAP pour créer des animations avancées.",
-      difficultes:
-        "Synchronisation et performance des animations.",
-      solutions:
-        "Tests et ajustements progressifs.",
-      competences: ["React", "GSAP", "UX/UI", "Animation"],
-      ameliorations:
-        "Ajouter des interactions plus avancées.",
-    },
-
-    lienCode: "https://github.com/Montsy744/GSAP_Mojito_landingPage",
-    lienSite: "https://gsap-mojito-landing-page-orpin.vercel.app/",
-
-    imgStack: [
-      "./../public/img/framework/REACT.png",
-      "./../public/img/framework/vite.png",
-      "./../public/img/stack/tailwindCss.png",
-      "./../public/img/stack/css.png",
-      "./../public/img/stack/js.png",
-      "./../public/img/stack/git.png",
-    ],
-  },
-
-  {
-    imgProjet: "./../public/img/project/fondHerbergeInDHopeV2.png",
-    title: "Herberge In d'Hope (Refonte)",
-
-    description:
-      "Ce projet personnel consiste en la refonte d’un site de restaurant que j’avais précédemment réalisé. L’objectif était de moderniser l’interface et de migrer vers des technologies récentes comme React et Tailwind CSS. J’ai entièrement repris le développement en améliorant la structure et le design. Le résultat est un site plus moderne et agréable à utiliser.",
-
-    analyse: {
-      apprentissage:
-        "Refactorisation d’un projet existant et migration vers React.",
-      difficultes:
-        "Repenser l’architecture du projet.",
-      solutions:
-        "Découpage en composants.",
-      competences: ["React", "Refactoring", "UI"],
-      ameliorations:
-        "Ajouter des fonctionnalités dynamiques (réservations).",
-    },
-
-    lienCode: "https://github.com/Montsy744/Herberge_In_d_Hope",
-    lienSite: "https://herberge-in-d-hope.vercel.app/",
-
-    imgStack: [
-      "./../public/img/framework/REACT.png",
-      "./../public/img/framework/vite.png",
-      "./../public/img/stack/tailwindCss.png",
-      "./../public/img/stack/css.png",
-      "./../public/img/stack/js.png",
-      "./../public/img/stack/git.png",
-    ],
-  },
-
   {
     imgProjet: "./../public/img/project/fondHerbergeInDHope.png",
     title: "Herberge In d'Hope",
